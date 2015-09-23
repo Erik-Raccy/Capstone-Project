@@ -1,3 +1,6 @@
+Run C4Engine.exe in the C4 Engine folder to play.
+
+
 Controls:
 
 WASD- move/strafe
