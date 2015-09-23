@@ -1,0 +1,2257 @@
+Entry (id = 'OKAY') {string {"OK"}}
+Entry (id = 'FPCK')
+{
+	Entry (id = 'CFRM') {string {"Confirm"}}
+	Entry (id = 'REPL') {string {"Replace existing file?"}}
+	Entry (id = 'YES ') {string {"Yes"}}
+	Entry (id = 'NO  ') {string {"No"}}
+}
+Entry (id = 'NODE')
+{
+	string {"Node"}
+	Entry (id = 'NODE')
+	{
+		string {"Node Settings"}
+		Entry (id = 'NAME') {string {"Node name"}}
+		Entry (id = 'DSAB') {string {"Node is initially disabled"}}
+		Entry (id = 'DENO') {string {"Allow direct enable/disable only"}}
+		Entry (id = 'MSZD')
+		{
+			string {"Maximum zone/subzone depth"}
+			Entry (id = 'UNLM') {string {"<all>"}}
+		}
+		Entry (id = 'FSZD')
+		{
+			string {"Forced zone/subzone depth"}
+			Entry (id = 'NONE') {string {"<none>"}}
+		}
+	}
+	Entry (id = 'ANIM')
+	{
+		string {"Animation Settings"}
+		Entry (id = 'ANME') {string {"Enable model animation"}}
+		Entry (id = 'ASUB') {string {"Always allow subnode animation"}}
+	}
+	Entry (id = 'PRSP')
+	{
+		string {"Perspective Mask"}
+		Entry (id = 'DPRM') {string {"Enable direct primary"}}
+		Entry (id = 'DRFL') {string {"Enable direct reflection"}}
+		Entry (id = 'DRFR') {string {"Enable direct refraction"}}
+		Entry (id = 'RPRM') {string {"Enable remote portal primary"}}
+		Entry (id = 'RRFL') {string {"Enable remote portal reflection"}}
+		Entry (id = 'RRFR') {string {"Enable remote portal refraction"}}
+		Entry (id = 'CPRM') {string {"Enable camera widget primary"}}
+		Entry (id = 'CRFL') {string {"Enable camera widget reflection"}}
+		Entry (id = 'CRFR') {string {"Enable camera widget refraction"}}
+		Entry (id = 'LGHT') {string {"Enable lighting space generation"}}
+	}
+}
+Entry (id = 'GEOM')
+{
+	string {"Geometry"}
+	Entry (id = 'REND')
+	{
+		string {"Rendering Flags"}
+		Entry (id = 'MODE')
+		{
+			string {"Rendering mode"}
+			Entry (id = 'NRML') {string {"Normal"}}
+			Entry (id = 'COVR') {string {"Remote portal cover"}}
+			Entry (id = 'OBEF') {string {"Opaque blended effect"}}
+			Entry (id = 'OAEF') {string {"Opaque additive effect"}}
+			Entry (id = 'TBEF') {string {"Transparent blended effect"}}
+			Entry (id = 'TAEF') {string {"Transparent additive effect"}}
+		}
+		Entry (id = 'RFOG') {string {"Render with fog"}}
+		Entry (id = 'CUBE') {string {"Render cube light projection"}}
+		Entry (id = 'AMBT') {string {"Render only with ambient light"}}
+		Entry (id = 'DCAL') {string {"Render as a decal"}}
+		Entry (id = 'IVIS') {string {"Geometry is invisible"}}
+		Entry (id = 'ISPC') {string {"Use paint space in instancing world"}}
+		Entry (id = 'BLUR') {string {"Apply motion blur"}}
+		Entry (id = 'MARK') {string {"Allow surface markings"}}
+	}
+	Entry (id = 'DETL')
+	{
+		string {"Detail Settings"}
+		Entry (id = 'SDET') {string {"Enable shader detail level"}}
+		Entry (id = 'SHDB') {string {"Shader detail bias"}}
+		Entry (id = 'BIAS') {string {"Geometry detail bias"}}
+	}
+	Entry (id = 'GSHD')
+	{
+		string {"Shadow Casting Flags"}
+		Entry (id = 'STEN') {string {"Render stencil shadow"}}
+		Entry (id = 'SHDM') {string {"Render in shadow map"}}
+	}
+	Entry (id = 'PRIM')
+	{
+		string {"Primitive Geometry Settings"}
+		Entry (id = 'CAPS') {string {"Build endcaps"}}
+		Entry (id = 'IVRT') {string {"Build inverted"}}
+		Entry (id = 'LEVL') {string {"Build detail levels"}}
+		Entry (id = 'XSUB') {string {"X subdivisions"}}
+		Entry (id = 'YSUB') {string {"Y subdivisions"}}
+	}
+	Entry (id = 'PATH')
+	{
+		string {"Path Geometry Settings"}
+		Entry (id = 'PTSC') {string {"Texcoord scale"}}
+	}
+	Entry (id = 'ROPE')
+	{
+		string {"Rope Geometry Settings"}
+		Entry (id = 'RGEO')
+		{
+			string {"Rope geometry type"}
+			Entry (id = 'TUBE') {string {"Tube"}}
+			Entry (id = 'CROS') {string {"Cross"}}
+		}
+		Entry (id = 'RTSC') {string {"Texcoord scale"}}
+		Entry (id = 'SWAP') {string {"Swap lateral texcoords"}}
+		Entry (id = 'CROF') {string {"Offset texcoords in cross"}}
+	}
+	Entry (id = 'SPRS') {string {"Perspective Mask (Shadow)"}}
+}
+Entry (id = 'COLL')
+{
+	string {"Collision"}
+	Entry (id = 'COLL')
+	{
+		string {"Collision Detection Settings"}
+		Entry (id = 'DTCT') {string {"Enable collision detection"}}
+		Entry (id = 'HULL') {string {"Use convex hull for collision"}}
+		Entry (id = 'LEVL') {string {"Collision detail level"}}
+	}
+	Entry (id = 'CFLG')
+	{
+		string {"Collision Flags"}
+		Entry (id = 'BODY') {string {"Allow generic rigid body collisions"}}
+		Entry (id = 'CHAR') {string {"Allow character collisions"}}
+		Entry (id = 'PROJ') {string {"Allow projectile collisions"}}
+		Entry (id = 'VHCL') {string {"Allow vehicle collisions"}}
+		Entry (id = 'CAMR') {string {"Allow camera collisions"}}
+		Entry (id = 'INTR') {string {"Allow interaction tests"}}
+	}
+	Entry (id = 'OFLG')
+	{
+		string {"Obstruction Flags"}
+		Entry (id = 'SITE') {string {"Obstruct sight"}}
+		Entry (id = 'SOND') {string {"Obstruct sound"}}
+	}
+}
+Entry (id = 'LITE')
+{
+	string {"Light"}
+	Entry (id = 'ILMN')
+	{
+		string {"Illumination"}
+		Entry (id = 'COLR') {string {"Light color"}}
+		Entry (id = 'PICK') {string {"Light Color"}}
+		Entry (id = 'SCAL') {string {"Brightness scale"}}
+		Entry (id = 'MDET') {string {"Minimum enabled detail level"}}
+	}
+	Entry (id = 'FLAG')
+	{
+		string {"Light Flags"}
+		Entry (id = 'STAT') {string {"Light is static"}}
+		Entry (id = 'NSHD') {string {"Light doesn’t cast stencil shadows"}}
+		Entry (id = 'NPRT') {string {"Light doesn’t shine through portals"}}
+		Entry (id = 'ISPC') {string {"Use shadow space in instancing world"}}
+		Entry (id = 'ROOT') {string {"Illuminate only connecting zones"}}
+	}
+	Entry (id = 'LAND')
+	{
+		string {"Landscape Shadow Settings"}
+		Entry (id = 'CSC1') {string {"Cascade 1 max distance"}}
+		Entry (id = 'CSC2') {string {"Cascade 2 max distance"}}
+		Entry (id = 'CSC3') {string {"Cascade 3 max distance"}}
+		Entry (id = 'CSC4') {string {"Cascade 4 max distance"}}
+		Entry (id = 'TRN1') {string {"Cascade 1–2 transition length"}}
+		Entry (id = 'TRN2') {string {"Cascade 2–3 transition length"}}
+		Entry (id = 'TRN3') {string {"Cascade 3–4 transition length"}}
+	}
+	Entry (id = 'SHAD')
+	{
+		string {"Texture Map Settings"}
+		Entry (id = 'GENR') {string {"Generate texture map"}}
+		Entry (id = 'SIZE') {string {"Texture map size"}}
+		Entry (id = 'FORM')
+		{
+			string {"Texture map format"}
+			Entry (id = 'RGBA') {string {"RGB Color"}}
+			Entry (id = 'INTS') {string {"Intensity"}}
+		}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'PICK') {string {"Texture Map"}}
+	}
+	Entry (id = 'LITE')
+	{
+		string {"Light Settings"}
+		Entry (id = 'SHAR') {string {"Do not share light object data"}}
+	}
+}
+Entry (id = 'SORC')
+{
+	string {"Source"}
+	Entry (id = 'SORC')
+	{
+		string {"Source Settings"}
+		Entry (id = 'SNAM') {string {"Sound name"}}
+		Entry (id = 'LIST') {string {"Sound play list"}}
+		Entry (id = 'PICK') {string {"Sound"}}
+		Entry (id = 'GRUP')
+		{
+			string {"Sound group"}
+			Entry (id = 'DFLT') {string {"<default>"}}
+		}
+		Entry (id = 'VOLU') {string {"Initial volume"}}
+		Entry (id = 'FREQ') {string {"Initial frequency"}}
+		Entry (id = 'STRM') {string {"Stream from disk (compressed)"}}
+		Entry (id = 'PLAY') {string {"Initially playing"}}
+		Entry (id = 'LOOP') {string {"Looping (forever)"}}
+		Entry (id = 'RAND') {string {"Random start (looping, non-streamed only)"}}
+		Entry (id = 'FADE') {string {"Fade-in time (s)"}}
+		Entry (id = 'LIDX') {string {"Loop index"}}
+	}
+	Entry (id = 'SPAT')
+	{
+		string {"Spatialization Settings"}
+		Entry (id = 'DPLR') {string {"Enable Doppler effect"}}
+		Entry (id = 'DIST') {string {"Enable distance delay"}}
+		Entry (id = 'RVRB') {string {"Enable reflections / reverb"}}
+		Entry (id = 'OBST') {string {"Enable obstruction"}}
+		Entry (id = 'REFL') {string {"Reflection volume"}}
+		Entry (id = 'REFH') {string {"Reflection HF volume"}}
+		Entry (id = 'CONV') {string {"Cone exterior volume"}}
+		Entry (id = 'CONH') {string {"Cone exterior HF volume"}}
+	}
+}
+Entry (id = 'ZONE')
+{
+	string {"Zone"}
+	Entry (id = 'ZONE')
+	{
+		string {"Zone Settings"}
+		Entry (id = 'SKYB') {string {"Render skybox in this zone"}}
+		Entry (id = 'AMBT') {string {"Ambient light color"}}
+		Entry (id = 'CPCK') {string {"Ambient Light"}}
+		Entry (id = 'ENVR') {string {"Environment map name"}}
+		Entry (id = 'TPCK') {string {"Environment Map"}}
+	}
+}
+Entry (id = 'PORT')
+{
+	string {"Portal"}
+	Entry (id = 'DRCT')
+	{
+		string {"Direct Portal Settings"}
+		Entry (id = 'LITE') {string {"No lights shine through portal"}}
+		Entry (id = 'STAT') {string {"No static lights shine through portal"}}
+		Entry (id = 'SHAD') {string {"No shadow maps render through portal"}}
+		Entry (id = 'NFOG') {string {"No fog is rendered through portal"}}
+		Entry (id = 'SORC') {string {"No source audio flows through portal"}}
+	}
+	Entry (id = 'REMO')
+	{
+		string {"Remote Portal Settings"}
+		Entry (id = 'NSKY') {string {"Do not render skybox through portal"}}
+		Entry (id = 'DIST') {string {"Render only distant scene (skybox)"}}
+		Entry (id = 'RLIT') {string {"Allow lights to shine through portal"}}
+		Entry (id = 'OBLQ') {string {"Remote camera uses oblique frustum"}}
+		Entry (id = 'RCUR') {string {"Enable recursive rendering"}}
+		Entry (id = 'BUFF')
+		{
+			string {"Portal target buffer"}
+			Entry (id = 'PRIM') {string {"Primary"}}
+			Entry (id = 'REFL') {string {"Reflection"}}
+			Entry (id = 'REFR') {string {"Refraction"}}
+		}
+		Entry (id = 'SPRT') {string {"Render separate shadow map"}}
+		Entry (id = 'CLER') {string {"Override clear color"}}
+		Entry (id = 'CPCK') {string {"Portal Clear Color"}}
+		Entry (id = 'OFST') {string {"Portal plane offset"}}
+		Entry (id = 'MLEV') {string {"Minimum detail level"}}
+		Entry (id = 'BIAS') {string {"Detail level bias"}}
+		Entry (id = 'FMUL') {string {"Focal length multiplier"}}
+		Entry (id = 'LKEY') {string {"Local position connector key"}}
+		Entry (id = 'RKEY') {string {"Remote position connector key"}}
+	}
+}
+Entry (id = 'FOG ')
+{
+	string {"Fog Space"}
+	Entry (id = 'FOG ')
+	{
+		string {"Fog Settings"}
+		Entry (id = 'COLR') {string {"Fog color"}}
+		Entry (id = 'PICK') {string {"Fog Color"}}
+		Entry (id = 'DENS') {string {"Fog density"}}
+		Entry (id = 'FUNC')
+		{
+			string {"Density function"}
+			Entry (id = 'CNST') {string {"Constant"}}
+			Entry (id = 'LINR') {string {"Linear"}}
+		}
+		Entry (id = 'DSTO') {string {"Apply distance occlusion"}}
+		Entry (id = 'DEPO') {string {"Apply depth occlusion"}}
+		Entry (id = 'OINT') {string {"Occlusion fog intensity"}}
+	}
+}
+Entry (id = 'LGHT')
+{
+	string {"Lighting Space"}
+	Entry (id = 'LGHT')
+	{
+		string {"Volume Texture Settings"}
+		Entry (id = 'XRES') {string {"Texture resolution X"}}
+		Entry (id = 'YRES') {string {"Texture resolution Y"}}
+		Entry (id = 'ZRES') {string {"Texture resolution Z"}}
+	}
+}
+Entry (id = 'AMBT')
+{
+	Entry (id = 'AMBT')
+	{
+		string {"Ambient Space Settings"}
+		Entry (id = 'SRAD') {string {"Sampling radius"}}
+		Entry (id = 'OEXP') {string {"Occlusion exponent"}}
+		Entry (id = 'MINV') {string {"Minimum ambient value"}}
+	}
+}
+Entry (id = 'RDSY')
+{
+	Entry (id = 'RDSY')
+	{
+		string {"Radiosity Space Settings"}
+		Entry (id = 'INSC') {string {"Radiosity intensity scale"}}
+		Entry (id = 'STSC') {string {"Color saturation scale"}}
+	}
+}
+Entry (id = 'ACST')
+{
+	string {"Acoustic Space"}
+	Entry (id = 'ACST')
+	{
+		string {"Acoustic Space Settings"}
+		Entry (id = 'REFV') {string {"Reflection volume"}}
+		Entry (id = 'REFH') {string {"Reflection HF volume"}}
+		Entry (id = 'RVBT') {string {"Reverb decay time (s)"}}
+		Entry (id = 'ABSP') {string {"Medium HF absorption"}}
+	}
+}
+Entry (id = 'PANT')
+{
+	string {"Paint Space"}
+	Entry (id = 'PANT')
+	{
+		string {"Paint Space Settings"}
+		Entry (id = 'MIPS') {string {"Enable mipmaps"}}
+		Entry (id = 'XRES') {string {"Resolution X"}}
+		Entry (id = 'YRES') {string {"Resolution Y"}}
+		Entry (id = 'CHAN') {string {"Channel count"}}
+	}
+}
+Entry (id = 'TRIG')
+{
+	string {"Trigger"}
+	Entry (id = 'TRIG')
+	{
+		string {"Trigger Settings"}
+		Entry (id = 'ONCE') {string {"Disabled after activation"}}
+		Entry (id = 'CONT') {string {"Continuously activated"}}
+		Entry (id = 'ACON') {string {"Activation connector key"}}
+		Entry (id = 'DCON') {string {"Deactivation connector key"}}
+	}
+}
+Entry (id = 'SHFT')
+{
+	string {"Shaft"}
+	Entry (id = 'SHFT')
+	{
+		string {"Shaft Settings"}
+		Entry (id = 'COLR') {string {"Shaft color"}}
+		Entry (id = 'PICK') {string {"Shaft Color"}}
+		Entry (id = 'BDNS') {string {"Density at bottom end"}}
+		Entry (id = 'TDNS') {string {"Density at top end"}}
+		Entry (id = 'SCL1') {string {"Primary intensity scale"}}
+		Entry (id = 'NOIS') {string {"Render with random noise"}}
+		Entry (id = 'CULL') {string {"Cull if camera above top plane"}}
+		Entry (id = 'TPCM') {string {"Top plane cull margin"}}
+		Entry (id = 'SANM') {string {"Shaft Animation Settings"}}
+		Entry (id = 'ANIM') {string {"Randomly animate intensity"}}
+		Entry (id = 'SCL2') {string {"Secondary intensity scale"}}
+		Entry (id = 'HMN1') {string {"Minimum primary hold time (s)"}}
+		Entry (id = 'HMX1') {string {"Maximum primary hold time (s)"}}
+		Entry (id = 'HMN2') {string {"Minimum secondary hold time (s)"}}
+		Entry (id = 'HMX2') {string {"Maximum secondary hold time (s)"}}
+		Entry (id = 'TMIN') {string {"Minimum transition time (s)"}}
+		Entry (id = 'TMAX') {string {"Maximum transition time (s)"}}
+	}
+}
+Entry (id = 'QUAD')
+{
+	string {"Quad"}
+	Entry (id = 'QUAD')
+	{
+		string {"Quad Settings"}
+		Entry (id = 'COLR') {string {"Quad color"}}
+		Entry (id = 'CPCK') {string {"Quad Color"}}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'TPCK') {string {"Texture Map"}}
+		Entry (id = 'BLND')
+		{
+			string {"Blend mode"}
+			Entry (id = 'ADD ') {string {"Add"}}
+			Entry (id = 'ADDA') {string {"Alpha add"}}
+			Entry (id = 'TERP') {string {"Alpha blend"}}
+			Entry (id = 'PREM') {string {"Alpha preblend"}}
+			Entry (id = 'REPL') {string {"Replace"}}
+		}
+		Entry (id = 'RFOG') {string {"Render with fog"}}
+		Entry (id = 'INFT') {string {"Render quad at infinity"}}
+		Entry (id = 'SOFT') {string {"Render with soft depth"}}
+		Entry (id = 'DSCL') {string {"Soft depth scale"}}
+	}
+}
+Entry (id = 'FLAR')
+{
+	string {"Flare"}
+	Entry (id = 'FLAR')
+	{
+		string {"Flare Settings"}
+		Entry (id = 'COLR') {string {"Flare color"}}
+		Entry (id = 'CPCK') {string {"Flare Color"}}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'TPCK') {string {"Texture Map"}}
+		Entry (id = 'OCCL') {string {"Occlusion radius"}}
+		Entry (id = 'ROTA') {string {"Rotation radius"}}
+	}
+}
+Entry (id = 'BEAM')
+{
+	string {"Beam"}
+	Entry (id = 'BEAM')
+	{
+		string {"Beam Settings"}
+		Entry (id = 'COLR') {string {"Beam color"}}
+		Entry (id = 'CPCK') {string {"Beam Color"}}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'TPCK') {string {"Texture Map"}}
+		Entry (id = 'TSCL') {string {"Texture coordinate scale"}}
+		Entry (id = 'SOFT') {string {"Render with soft depth"}}
+		Entry (id = 'DSCL') {string {"Soft depth scale"}}
+	}
+}
+Entry (id = 'TUBE')
+{
+	string {"Tube"}
+	Entry (id = 'TUBE')
+	{
+		string {"Tube Settings"}
+		Entry (id = 'COLR') {string {"Tube color"}}
+		Entry (id = 'CPCK') {string {"Tube Color"}}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'TPCK') {string {"Texture Map"}}
+		Entry (id = 'TSCL') {string {"Texture coordinate scale"}}
+		Entry (id = 'SBDV') {string {"Subdivisions per component"}}
+	}
+}
+Entry (id = 'BOLT')
+{
+	string {"Bolt"}
+	Entry (id = 'BOLT')
+	{
+		string {"Bolt Settings"}
+		Entry (id = 'DEVI') {string {"Max deviation from path"}}
+		Entry (id = 'DPTH') {string {"Branching levels"}}
+		Entry (id = 'BRCH') {string {"Branches per level"}}
+		Entry (id = 'SCAL') {string {"Branch radius scale"}}
+		Entry (id = 'MINL') {string {"Min branch length"}}
+		Entry (id = 'MAXL') {string {"Max branch length"}}
+	}
+}
+Entry (id = 'FIRE')
+{
+	string {"Fire"}
+	Entry (id = 'FIRE')
+	{
+		string {"Fire Settings"}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'PICK') {string {"Texture Map"}}
+		Entry (id = 'INTS') {string {"Fire intensity"}}
+		Entry (id = 'SPED') {string {"Turbulence speed"}}
+	}
+}
+Entry (id = 'SHCK') {string {"Shockwave"}}
+Entry (id = 'PANL')
+{
+	string {"Panel"}
+	Entry (id = 'PANL')
+	{
+		string {"Panel Settings"}
+		Entry (id = 'DOFF') {string {"Apply depth offset"}}
+		Entry (id = 'TSID') {string {"Render two-sided"}}
+		Entry (id = 'RFOG') {string {"Render with fog"}}
+		Entry (id = 'PADD') {string {"Interaction padding"}}
+		Entry (id = 'IPST') {string {"Impostor texture"}}
+		Entry (id = 'PICK') {string {"Impostor Texture"}}
+		Entry (id = 'IMIN') {string {"Impostor transition min distance"}}
+		Entry (id = 'IMAX') {string {"Impostor transition max distance"}}
+	}
+}
+Entry (id = 'STAR')
+{
+	string {"Star Field"}
+	Entry (id = 'STAR')
+	{
+		string {"Star Field Settings"}
+		Entry (id = 'FNAM') {string {"Star field name"}}
+		Entry (id = 'PICK') {string {"Star Field"}}
+		Entry (id = 'HORZ') {string {"Render above horizon only"}}
+	}
+}
+Entry (id = 'EMIT')
+{
+	string {"Emitter"}
+	Entry (id = 'EMIT')
+	{
+		string {"Emitter Settings"}
+		Entry (id = 'HITE') {string {"Enable height field"}}
+		Entry (id = 'XSUB') {string {"Height field X subdivisions"}}
+		Entry (id = 'YSUB') {string {"Height field Y subdivisions"}}
+	}
+}
+Entry (id = 'SHAP')
+{
+	string {"Shape"}
+	Entry (id = 'SHAP')
+	{
+		string {"Shape Settings"}
+		Entry (id = 'DENS') {string {"Shape density"}}
+		Entry (id = 'COLL') {string {"Ignore shape for collision detection"}}
+		Entry (id = 'SBST')
+		{
+			string {"Shape substance"}
+			Entry (id = 'NONE') {string {"<none>"}}
+		}
+	}
+}
+Entry (id = 'JONT')
+{
+	string {"Joint"}
+	Entry (id = 'JONT')
+	{
+		string {"Joint Settings"}
+		Entry (id = 'BRAK') {string {"Joint is breakable"}}
+		Entry (id = 'BFRC') {string {"Breaking force (kN)"}}
+	}
+}
+Entry (id = 'FELD')
+{
+	string {"Field"}
+	Entry (id = 'FELD')
+	{
+		string {"Field Settings"}
+		Entry (id = 'EXCL') {string {"Field is exclusive"}}
+	}
+}
+Entry (id = 'SKYB')
+{
+	string {"Skybox"}
+	Entry (id = 'SKYB')
+	{
+		string {"Skybox Settings"}
+		Entry (id = 'HORZ') {string {"Render above horizon only"}}
+		Entry (id = 'SMER') {string {"Smear texture below horizon"}}
+		Entry (id = 'TEXC') {string {"Horizon texcoord adjustment"}}
+		Entry (id = 'GLOW') {string {"Enable skybox glow"}}
+		Entry (id = 'RFOG') {string {"Render with fog"}}
+	}
+	Entry (id = 'TXTR')
+	{
+		string {"Skybox Textures"}
+		Entry (id = 'FAC0') {string {"Positive X texture map name"}}
+		Entry (id = 'FAC1') {string {"Negative X texture map name"}}
+		Entry (id = 'FAC2') {string {"Positive Y texture map name"}}
+		Entry (id = 'FAC3') {string {"Negative Y texture map name"}}
+		Entry (id = 'FAC4') {string {"Positive Z texture map name"}}
+		Entry (id = 'FAC5') {string {"Negative Z texture map name"}}
+		Entry (id = 'PICK') {string {"Texture Map"}}
+	}
+}
+Entry (id = 'IPST')
+{
+	string {"Impostor"}
+	Entry (id = 'IPST')
+	{
+		string {"Impostor Settings"}
+		Entry (id = 'DIST') {string {"Render distance"}}
+		Entry (id = 'XLEN') {string {"Transition length"}}
+	}
+	Entry (id = 'REND')
+	{
+		string {"Rendering Settings"}
+		Entry (id = 'REFL') {string {"Always render in reflection perspective"}}
+		Entry (id = 'REFR') {string {"Always render in refraction perspective"}}
+		Entry (id = 'CAMR') {string {"Always render in camera widget perspective"}}
+	}
+}
+Entry (id = 'INST')
+{
+	string {"Instance"}
+	Entry (id = 'INST')
+	{
+		string {"Instance Settings"}
+		Entry (id = 'WRLD') {string {"Instanced world name"}}
+		Entry (id = 'PICK') {string {"Instanced World"}}
+	}
+}
+Entry (id = 'MODL')
+{
+	string {"Model"}
+	Entry (id = 'GMOD')
+	{
+		string {"Generic Model Settings"}
+		Entry (id = 'MODL') {string {"Generic model name"}}
+		Entry (id = 'PICK') {string {"Generic Model"}}
+	}
+}
+Entry (id = 'LOCA')
+{
+	string {"Locator"}
+	Entry (id = 'LOCA')
+	{
+		string {"Locator Settings"}
+		Entry (id = 'TYPE') {string {"Locator type"}}
+	}
+}
+Entry (id = 'CUBE')
+{
+	string {"Cube Map"}
+	Entry (id = 'CUBE')
+	{
+		string {"Cube Marker Settings"}
+		Entry (id = 'SIZE') {string {"Texture map size"}}
+		Entry (id = 'FORM')
+		{
+			string {"Texture map format"}
+			Entry (id = 'RGBA') {string {"RGB Color"}}
+			Entry (id = 'INTS') {string {"Intensity"}}
+		}
+		Entry (id = 'FILT') {string {"Apply blur filter"}}
+		Entry (id = 'TNAM') {string {"Texture map name"}}
+		Entry (id = 'PICK') {string {"Texture Map"}}
+	}
+}
+Entry (id = 'WBLK')
+{
+	string {"Water Block"}
+	Entry (id = 'WBLK')
+	{
+		string {"Water Block Settings"}
+		Entry (id = 'LMIN') {string {"Minimum land elevation"}}
+		Entry (id = 'LMAX') {string {"Maximum land elevation"}}
+		Entry (id = 'LTST') {string {"Maximum land test elevation"}}
+	}
+}
+Entry (id = 'CTRL')
+{
+	Entry (id = 'GNRC') {string {"<generic>"}}
+	Entry (id = 'SHPM')
+	{
+		string {"Shader Parameter"}
+		Entry (id = 'SLOT')
+		{
+			string {"Shader parameter slot"}
+			Entry (id = 'PRM0') {string {"Parameter 0"}}
+			Entry (id = 'PRM1') {string {"Parameter 1"}}
+			Entry (id = 'PRM2') {string {"Parameter 2"}}
+			Entry (id = 'PRM3') {string {"Parameter 3"}}
+			Entry (id = 'PRM4') {string {"Parameter 4"}}
+			Entry (id = 'PRM5') {string {"Parameter 5"}}
+			Entry (id = 'PRM6') {string {"Parameter 6"}}
+			Entry (id = 'PRM7') {string {"Parameter 7"}}
+		}
+		Entry (id = 'DKEY') {string {"Driver connector key"}}
+	}
+	Entry (id = 'STRB')
+	{
+		string {"Strobe"}
+		Entry (id = 'CLR1') {string {"Primary strobe color"}}
+		Entry (id = 'CLR2') {string {"Secondary strobe color"}}
+		Entry (id = 'PCK1') {string {"Primary Strobe Color"}}
+		Entry (id = 'PCK2') {string {"Secondary Strobe Color"}}
+		Entry (id = 'HMN1') {string {"Minimum primary hold time (s)"}}
+		Entry (id = 'HMX1') {string {"Maximum primary hold time (s)"}}
+		Entry (id = 'HMN2') {string {"Minimum secondary hold time (s)"}}
+		Entry (id = 'HMX2') {string {"Maximum secondary hold time (s)"}}
+		Entry (id = 'TMIN') {string {"Minimum transition time (s)"}}
+		Entry (id = 'TMAX') {string {"Maximum transition time (s)"}}
+	}
+	Entry (id = 'FLCK')
+	{
+		string {"Flicker"}
+		Entry (id = 'INTS') {string {"Flicker intensity"}}
+		Entry (id = 'AMPL') {string {"Motion amplitude (m)"}}
+	}
+	Entry (id = 'FLSH')
+	{
+		string {"Flash"}
+		Entry (id = 'COLR') {string {"Brightest light color"}}
+		Entry (id = 'PICK') {string {"Flash Color"}}
+		Entry (id = 'STAR') {string {"Starting intensity"}}
+		Entry (id = 'DURA') {string {"Flash duration (s)"}}
+	}
+	Entry (id = 'ANIM')
+	{
+		string {"Animation"}
+		Entry (id = 'NAME') {string {"Initial animation name"}}
+		Entry (id = 'PICK') {string {"Animation Resource"}}
+		Entry (id = 'IPLY') {string {"Animation is initially playing"}}
+		Entry (id = 'RVRS') {string {"Animation plays in reverse"}}
+		Entry (id = 'LOOP') {string {"Animation is looping"}}
+		Entry (id = 'OSCL') {string {"Animation is oscillating"}}
+		Entry (id = 'PLAY')
+		{
+			string {"Play Animation"}
+			Entry (id = 'ANAM') {string {"Animation name"}}
+			Entry (id = 'RVRS') {string {"Reverse"}}
+			Entry (id = 'LOOP') {string {"Loop"}}
+			Entry (id = 'OSCL') {string {"Oscillate"}}
+		}
+		Entry (id = 'STOP') {string {"Stop Animation"}}
+	}
+	Entry (id = 'SKIN') {string {"Skin"}}
+	Entry (id = 'SCPT')
+	{
+		string {"Script"}
+		Entry (id = 'INIT') {string {"Execute script when loaded"}}
+		Entry (id = 'LOOP') {string {"Loop script continuously"}}
+		Entry (id = 'RENT') {string {"Allow concurrent runs"}}
+		Entry (id = 'UNIQ') {string {"Require unique concurrent initiators"}}
+	}
+	Entry (id = 'PANL')
+	{
+		string {"Panel"}
+		Entry (id = 'WIDE') {string {"Interface width"}}
+		Entry (id = 'HIGH') {string {"Interface height"}}
+		Entry (id = 'INVS') {string {"Invisible time before sleeping (s)"}}
+		Entry (id = 'CURS') {string {"Cursor texture"}}
+		Entry (id = 'PICK') {string {"Cursor Texture"}}
+		Entry (id = 'FUNC')
+		{
+			Entry (id = 'IDNT') {string {"Target widget identifier"}}
+			Entry (id = 'MUTR') {string {"Target mutator identifier"}}
+		}
+		Entry (id = 'ENAB') {string {"Enable Widgets"}}
+		Entry (id = 'DSAB') {string {"Disable Widgets"}}
+		Entry (id = 'SHOW') {string {"Show Widgets"}}
+		Entry (id = 'HIDE') {string {"Hide Widgets"}}
+		Entry (id = 'ACTV') {string {"Activate Widgets"}}
+		Entry (id = 'MFLG')
+		{
+			string {"Set Mutator State"}
+			Entry (id = 'DSAB') {string {"Mutator disabled"}}
+			Entry (id = 'RVRS') {string {"Mutator reversed"}}
+		}
+		Entry (id = 'GCLR') {string {"Get Widget Color"}}
+		Entry (id = 'COLR')
+		{
+			string {"Set Widget Color"}
+			Entry (id = 'COLR') {string {"Widget color"}}
+			Entry (id = 'PICK') {string {"Widget Color"}}
+		}
+		Entry (id = 'GIMG') {string {"Get Widget Image"}}
+		Entry (id = 'IMAG')
+		{
+			string {"Set Widget Image"}
+			Entry (id = 'TNAM') {string {"Widget texture map name"}}
+			Entry (id = 'TPCK') {string {"Widget Texture Map Name"}}
+		}
+		Entry (id = 'GTXT') {string {"Get Widget Text"}}
+		Entry (id = 'TEXT')
+		{
+			string {"Set Widget Text"}
+			Entry (id = 'TEXT') {string {"Widget text"}}
+			Entry (id = 'MODE')
+			{
+				string {"Text combine mode"}
+				Entry (id = 'REPL') {string {"Replace"}}
+				Entry (id = 'APND') {string {"Append"}}
+				Entry (id = 'PPND') {string {"Prepend"}}
+			}
+			Entry (id = 'LENG') {string {"Max result length"}}
+		}
+		Entry (id = 'GVAL') {string {"Get Widget Value"}}
+		Entry (id = 'VALU')
+		{
+			string {"Set Widget Value"}
+			Entry (id = 'VALU') {string {"Widget value"}}
+		}
+		Entry (id = 'CKEY')
+		{
+			string {"Set Camera\nConnector Key"}
+			Entry (id = 'CCON') {string {"Camera connector key"}}
+		}
+		Entry (id = 'GBRD') {string {"Get Paint Widget Brush Radius"}}
+		Entry (id = 'SBRD')
+		{
+			string {"Set Paint Widget Brush Radius"}
+			Entry (id = 'RADI') {string {"Brush radius"}}
+		}
+		Entry (id = 'GBFZ') {string {"Get Paint Widget Brush Fuzziness"}}
+		Entry (id = 'SBFZ')
+		{
+			string {"Set Paint Widget Brush Fuzziness"}
+			Entry (id = 'FUZZ') {string {"Brush fuzziness"}}
+		}
+		Entry (id = 'GBOP') {string {"Get Paint Widget Brush Opacity"}}
+		Entry (id = 'SBOP')
+		{
+			string {"Set Paint Widget Brush Opacity"}
+			Entry (id = 'OPAC') {string {"Brush opacity"}}
+		}
+		Entry (id = 'GBCL') {string {"Get Paint Widget Brush Color"}}
+		Entry (id = 'SBCL')
+		{
+			string {"Set Paint Widget Brush Color"}
+			Entry (id = 'COLR') {string {"Brush color"}}
+			Entry (id = 'PICK') {string {"Brush Color"}}
+		}
+		Entry (id = 'PLMV') {string {"Play Movie Widget"}}
+		Entry (id = 'STMV') {string {"Stop Movie Widget"}}
+		Entry (id = 'GMVT') {string {"Get Movie Widget Time"}}
+		Entry (id = 'SMVT')
+		{
+			string {"Set Movie Widget Time"}
+			Entry (id = 'TIME') {string {"Time (s)"}}
+		}
+	}
+	Entry (id = 'MOVE')
+	{
+		string {"Movement"}
+		Entry (id = 'MSPD') {string {"Movement speed (m/s)"}}
+		Entry (id = 'ACCT') {string {"Acceleration time (s)"}}
+		Entry (id = 'DECT') {string {"Deceleration time (s)"}}
+		Entry (id = 'SKEY') {string {"Start position connector key"}}
+		Entry (id = 'FKEY') {string {"Finish position connector key"}}
+		Entry (id = 'GSPD') {string {"Get Movement Speed"}}
+		Entry (id = 'SSPD')
+		{
+			string {"Set Movement Speed"}
+			Entry (id = 'MSPD') {string {"Movement speed (m/s)"}}
+		}
+		Entry (id = 'STAR') {string {"Move to\nStart Position"}}
+		Entry (id = 'FINI') {string {"Move to\nFinish Position"}}
+	}
+	Entry (id = 'OSCL')
+	{
+		string {"Oscillation"}
+		Entry (id = 'OSSP') {string {"Oscillation speed (cycles/s)"}}
+		Entry (id = 'SKEY') {string {"Start position connector key"}}
+		Entry (id = 'FKEY') {string {"Finish position connector key"}}
+		Entry (id = 'GSPD') {string {"Get Oscillation Speed"}}
+		Entry (id = 'SSPD')
+		{
+			string {"Set Oscillation Speed"}
+			Entry (id = 'OSSP') {string {"Oscillation speed (cycles/s)"}}
+			Entry (id = 'ACCT') {string {"Acceleration time (s)"}}
+		}
+	}
+	Entry (id = 'ROTA')
+	{
+		string {"Rotation"}
+		Entry (id = 'RANG') {string {"Rotation angle (deg)"}}
+		Entry (id = 'RSPD') {string {"Rotation speed (deg/s)"}}
+		Entry (id = 'ACCT') {string {"Acceleration time (s)"}}
+		Entry (id = 'DECT') {string {"Deceleration time (s)"}}
+		Entry (id = 'CKEY') {string {"Center position connector key"}}
+		Entry (id = 'GSPD') {string {"Get Rotation Speed"}}
+		Entry (id = 'SSPD')
+		{
+			string {"Set Rotation Speed"}
+			Entry (id = 'RSPD') {string {"Rotation speed (deg/s)"}}
+		}
+		Entry (id = 'STAR') {string {"Rotate to\nStart Angle"}}
+		Entry (id = 'FINI') {string {"Rotate to\nFinish Angle"}}
+	}
+	Entry (id = 'SPIN')
+	{
+		string {"Spin"}
+		Entry (id = 'SPSP') {string {"Spin speed (rev/s)"}}
+		Entry (id = 'CKEY') {string {"Center position connector key"}}
+		Entry (id = 'GSPD') {string {"Get Spin Speed"}}
+		Entry (id = 'SSPD')
+		{
+			string {"Set Spin Speed"}
+			Entry (id = 'SPSP') {string {"Spin speed (rev/s)"}}
+			Entry (id = 'ACCT') {string {"Acceleration time (s)"}}
+		}
+	}
+	Entry (id = 'BODY')
+	{
+		string {"Rigid Body"}
+		Entry (id = 'FLAG')
+		{
+			string {"Rigid Body Flags"}
+			Entry (id = 'SLEP') {string {"Initially asleep"}}
+			Entry (id = 'IFRC') {string {"Ignore force fields"}}
+		}
+		Entry (id = 'PROP')
+		{
+			string {"Physical Properties"}
+			Entry (id = 'GRAV') {string {"Gravity multiplier"}}
+			Entry (id = 'FLDG') {string {"Fluid drag multiplier"}}
+			Entry (id = 'WNDG') {string {"Wind drag multiplier"}}
+			Entry (id = 'REST') {string {"Restitution coefficient"}}
+			Entry (id = 'FRIC') {string {"Friction coefficient"}}
+			Entry (id = 'ROLL') {string {"Rolling resistance"}}
+		}
+		Entry (id = 'NTWK')
+		{
+			string {"Network Settings"}
+			Entry (id = 'SNAP') {string {"Snapshot period"}}
+		}
+	}
+	Entry (id = 'DFRM')
+	{
+		Entry (id = 'FLAG')
+		{
+			string {"Deformable Body Flags"}
+			Entry (id = 'IFRC') {string {"Ignore force fields"}}
+		}
+		Entry (id = 'TIME')
+		{
+			string {"Time Settings"}
+			Entry (id = 'WARM') {string {"Warm start time interval (s)"}}
+			Entry (id = 'INVS') {string {"Invisible time before sleeping (s)"}}
+		}
+		Entry (id = 'PROP')
+		{
+			string {"Physical Properties"}
+			Entry (id = 'MASS') {string {"Particle mass (kg)"}}
+			Entry (id = 'VOLU') {string {"Volume multiplier"}}
+			Entry (id = 'GRAV') {string {"Gravity multiplier"}}
+			Entry (id = 'FLDG') {string {"Fluid drag multiplier"}}
+			Entry (id = 'WNDG') {string {"Wind drag multiplier"}}
+			Entry (id = 'IRES') {string {"Internal resistance"}}
+		}
+	}
+	Entry (id = 'ROPE')
+	{
+		string {"Rope"}
+		Entry (id = 'SPRG')
+		{
+			string {"Spring Settings"}
+			Entry (id = 'STRS') {string {"Stretch spring coefficient"}}
+			Entry (id = 'BNDS') {string {"Bend spring coefficient"}}
+		}
+		Entry (id = 'DAMP')
+		{
+			string {"Damper Settings"}
+			Entry (id = 'STRD') {string {"Stretch damper coefficient"}}
+			Entry (id = 'BNDD') {string {"Bend damper coefficient"}}
+		}
+		Entry (id = 'ATCH')
+		{
+			string {"Attachment Settings"}
+			Entry (id = 'END1') {string {"Attach left endpoint"}}
+			Entry (id = 'END2') {string {"Attach right endpoint"}}
+			Entry (id = 'KEY1') {string {"Left attachment connector key"}}
+			Entry (id = 'KEY2') {string {"Right attachment connector key"}}
+		}
+		Entry (id = 'BRAT')
+		{
+			string {"Break Rope Attachment"}
+			Entry (id = 'BRK1') {string {"Break left attachment"}}
+			Entry (id = 'BRK2') {string {"Break right attachment"}}
+		}
+	}
+	Entry (id = 'CLTH')
+	{
+		string {"Cloth"}
+		Entry (id = 'PROP')
+		{
+			Entry (id = 'THCK') {string {"Cloth thickness (m)"}}
+		}
+		Entry (id = 'SPRG')
+		{
+			string {"Spring Settings"}
+			Entry (id = 'STRS') {string {"Stretch spring coefficient"}}
+			Entry (id = 'SHRS') {string {"Shear spring coefficient"}}
+			Entry (id = 'BNDS') {string {"Bend spring coefficient"}}
+		}
+		Entry (id = 'DAMP')
+		{
+			string {"Damper Settings"}
+			Entry (id = 'STRD') {string {"Stretch damper coefficient"}}
+			Entry (id = 'SHRD') {string {"Shear damper coefficient"}}
+			Entry (id = 'BNDD') {string {"Bend damper coefficient"}}
+		}
+		Entry (id = 'ATCH')
+		{
+			string {"Attachment Settings"}
+			Entry (id = 'COR1') {string {"Attach lower-left corner"}}
+			Entry (id = 'COR2') {string {"Attach lower-right corner"}}
+			Entry (id = 'COR3') {string {"Attach upper-right corner"}}
+			Entry (id = 'COR4') {string {"Attach upper-left corner"}}
+			Entry (id = 'EDG1') {string {"Attach bottom edge"}}
+			Entry (id = 'EDG2') {string {"Attach right edge"}}
+			Entry (id = 'EDG3') {string {"Attach top edge"}}
+			Entry (id = 'EDG4') {string {"Attach left edge"}}
+		}
+	}
+	Entry (id = 'PHYS')
+	{
+		string {"Physics"}
+		Entry (id = 'GRAV') {string {"Gravity acceleration (m/s²)"}}
+		Entry (id = 'SGRV')
+		{
+			string {"Set gravity"}
+			Entry (id = 'GRAV') {string {"Gravity acceleration (m/s²)"}}
+		}
+	}
+	Entry (id = 'WATR')
+	{
+		string {"Water"}
+		Entry (id = 'PARM')
+		{
+			string {"General Water Parameters"}
+			Entry (id = 'SPED') {string {"Wave speed (m/s)"}}
+			Entry (id = 'VISC') {string {"Viscosity"}}
+		}
+		Entry (id = 'ACTV')
+		{
+			string {"Activity Parameters"}
+			Entry (id = 'WDST') {string {"Maximum always awake distance (m)"}}
+			Entry (id = 'SDST') {string {"Minimum always asleep distance (m)"}}
+			Entry (id = 'INVS') {string {"Invisible time before sleeping (s)"}}
+		}
+		Entry (id = 'RAND')
+		{
+			string {"Random Wave Generation"}
+			Entry (id = 'RWAV') {string {"Enable random waves"}}
+			Entry (id = 'DELT') {string {"Maximum wave elevation"}}
+			Entry (id = 'PCNT') {string {"Position count (per geometry)"}}
+		}
+		Entry (id = 'PONT')
+		{
+			string {"Generate Point Wave"}
+			Entry (id = 'PCON') {string {"Position connector key"}}
+			Entry (id = 'RADI') {string {"Generator wave radius"}}
+			Entry (id = 'DELT') {string {"Height delta per step"}}
+			Entry (id = 'TIME') {string {"Duration (time steps)"}}
+		}
+		Entry (id = 'LINE')
+		{
+			string {"Generate Line Wave"}
+			Entry (id = 'PCN1') {string {"Endpoint 1 connector key"}}
+			Entry (id = 'PCN2') {string {"Endpoint 2 connector key"}}
+			Entry (id = 'RADI') {string {"Generator wave radius"}}
+			Entry (id = 'DELT') {string {"Height delta per step"}}
+			Entry (id = 'TIME') {string {"Duration (time steps)"}}
+		}
+	}
+}
+Entry (id = 'VALU')
+{
+	Entry (id = 'NAME') {string {"Variable name"}}
+	Entry (id = 'TYPE')
+	{
+		string {"Variable type"}
+		Entry (id = 'BOOL') {string {"Boolean"}}
+		Entry (id = 'INTG') {string {"Integer"}}
+		Entry (id = 'FLOT') {string {"Float"}}
+		Entry (id = 'STRG') {string {"String"}}
+		Entry (id = 'COLR') {string {"Color"}}
+		Entry (id = 'VECT') {string {"Vector"}}
+		Entry (id = 'PONT') {string {"Point"}}
+	}
+	Entry (id = 'SCOP')
+	{
+		string {"Variable scope"}
+		Entry (id = 'SCPT') {string {"Script"}}
+		Entry (id = 'OBJC') {string {"Object"}}
+	}
+	Entry (id = 'INIT')
+	{
+		string {"Initial value"}
+		Entry (id = 'TRUE') {string {"True"}}
+		Entry (id = 'FALS') {string {"False"}}
+		Entry (id = 'COLR') {string {"Initial Color"}}
+	}
+	Entry (id = 'VEC0') {string {"Initial value x"}}
+	Entry (id = 'VEC1') {string {"Initial value y"}}
+	Entry (id = 'VEC2') {string {"Initial value z"}}
+}
+Entry (id = 'MTHD')
+{
+	Entry (id = 'NULL') {string {"(Null)"}}
+	Entry (id = 'SECT')
+	{
+		string {"Section"}
+		Entry (id = 'CMNT') {string {"Comment"}}
+		Entry (id = 'COLR') {string {"Background color"}}
+		Entry (id = 'PICK') {string {"Background Color"}}
+	}
+	Entry (id = 'EXPR') {string {"Evaluate Expression"}}
+	Entry (id = 'FUNC') {string {"Call Controller Function"}}
+	Entry (id = 'SETT') {string {"Change Settings"}}
+	Entry (id = 'ACVT') {string {"Activate Controller"}}
+	Entry (id = 'DACT') {string {"Deactivate Controller"}}
+	Entry (id = 'TERM') {string {"Terminate\nExternal Script"}}
+	Entry (id = 'GVAR')
+	{
+		string {"Get External Variable"}
+		Entry (id = 'NAME') {string {"External variable name"}}
+	}
+	Entry (id = 'SVAR')
+	{
+		string {"Set External Variable"}
+		Entry (id = 'NAME') {string {"External variable name"}}
+		Entry (id = 'SORC') {string {"Source variable name"}}
+	}
+	Entry (id = 'SCOL')
+	{
+		string {"Set Color Value"}
+		Entry (id = 'CHN0') {string {"Red channel"}}
+		Entry (id = 'CHN1') {string {"Green channel"}}
+		Entry (id = 'CHN2') {string {"Blue channel"}}
+		Entry (id = 'CHN3') {string {"Alpha channel"}}
+	}
+	Entry (id = 'SVEC')
+	{
+		string {"Set Vector Value"}
+		Entry (id = 'COM0') {string {"X component"}}
+		Entry (id = 'COM1') {string {"Y component"}}
+		Entry (id = 'COM2') {string {"Z component"}}
+	}
+	Entry (id = 'TIME') {string {"Get Script Time"}}
+	Entry (id = 'DLAY')
+	{
+		string {"Delay"}
+		Entry (id = 'TIME') {string {"Delay time (s)"}}
+	}
+	Entry (id = 'RNDI')
+	{
+		string {"Random Integer"}
+		Entry (id = 'MINV') {string {"Minimum value"}}
+		Entry (id = 'MAXV') {string {"Maximum value"}}
+	}
+	Entry (id = 'RNDF')
+	{
+		string {"Random Float"}
+		Entry (id = 'MINV') {string {"Minimum value (inclusive)"}}
+		Entry (id = 'MAXV') {string {"Maximum value (exclusive)"}}
+	}
+	Entry (id = 'SLEN')
+	{
+		string {"Get String Length"}
+		Entry (id = 'ISTR') {string {"Input string"}}
+	}
+	Entry (id = 'WAKE') {string {"Wake Controller"}}
+	Entry (id = 'SLEP') {string {"Sleep Controller"}}
+	Entry (id = 'GWAK') {string {"Get Controller\nWake State"}}
+	Entry (id = 'ENAB') {string {"Enable Node"}}
+	Entry (id = 'DSAB') {string {"Disable Node"}}
+	Entry (id = 'GENA') {string {"Get Node\nEnable State"}}
+	Entry (id = 'DELT') {string {"Delete Node"}}
+	Entry (id = 'EINT') {string {"Enable Interactivity"}}
+	Entry (id = 'DINT') {string {"Disable Interactivity"}}
+	Entry (id = 'GINT') {string {"Get Interactivity State"}}
+	Entry (id = 'SGEO') {string {"Show Geometry"}}
+	Entry (id = 'HGEO') {string {"Hide Geometry"}}
+	Entry (id = 'GVIS') {string {"Get Geometry\nVisibility State"}}
+	Entry (id = 'NPOS') {string {"Get Object-Space Position"}}
+	Entry (id = 'WPOS') {string {"Get World-Space Position"}}
+	Entry (id = 'SOND')
+	{
+		string {"Play Sound"}
+		Entry (id = 'NAME') {string {"Sound"}}
+		Entry (id = 'STRM') {string {"Sound is streamed"}}
+		Entry (id = 'LOOP') {string {"Loop count"}}
+		Entry (id = 'VOLU') {string {"Volume"}}
+		Entry (id = 'FADE') {string {"Fade-in time (s)"}}
+	}
+	Entry (id = 'PSRC') {string {"Play Source"}}
+	Entry (id = 'SSRC') {string {"Stop Source"}}
+	Entry (id = 'FSRC')
+	{
+		string {"Vary Source Volume"}
+		Entry (id = 'VOLU') {string {"Volume target"}}
+		Entry (id = 'TIME') {string {"Variation time (s)"}}
+		Entry (id = 'STOP') {string {"Stop when finished"}}
+	}
+	Entry (id = 'QSRC')
+	{
+		string {"Vary Source Frequency"}
+		Entry (id = 'FREQ') {string {"Frequency target"}}
+		Entry (id = 'TIME') {string {"Variation time (s)"}}
+		Entry (id = 'STOP') {string {"Stop when finished"}}
+	}
+	Entry (id = 'MATL')
+	{
+		string {"Set Material Color"}
+		Entry (id = 'COLR') {string {"Material color"}}
+		Entry (id = 'ATTR')
+		{
+			string {"Affected attribute"}
+			Entry (id = 'DIFF') {string {"Diffuse color"}}
+			Entry (id = 'SPEC') {string {"Specular color"}}
+			Entry (id = 'MFCT') {string {"Microfacet color"}}
+			Entry (id = 'EMIS') {string {"Emission color"}}
+			Entry (id = 'ENVR') {string {"Environment color"}}
+			Entry (id = 'REFL') {string {"Reflection color"}}
+			Entry (id = 'REFR') {string {"Refraction color"}}
+		}
+	}
+	Entry (id = 'SHDR')
+	{
+		Entry (id = 'SLOT')
+		{
+			string {"Parameter slot"}
+			Entry (id = 'PRM0') {string {"Parameter 0"}}
+			Entry (id = 'PRM1') {string {"Parameter 1"}}
+			Entry (id = 'PRM2') {string {"Parameter 2"}}
+			Entry (id = 'PRM3') {string {"Parameter 3"}}
+			Entry (id = 'PRM4') {string {"Parameter 4"}}
+			Entry (id = 'PRM5') {string {"Parameter 5"}}
+			Entry (id = 'PRM6') {string {"Parameter 6"}}
+			Entry (id = 'PRM7') {string {"Parameter 7"}}
+		}
+		Entry (id = 'SPRM')
+		{
+			string {"Set Shader\nScalar Parameter"}
+			Entry (id = 'VALU') {string {"Value"}}
+		}
+		Entry (id = 'VPRM')
+		{
+			string {"Set Shader\nVector Parameter"}
+			Entry (id = 'XXXX') {string {"X value"}}
+			Entry (id = 'YYYY') {string {"Y value"}}
+			Entry (id = 'ZZZZ') {string {"Z value"}}
+			Entry (id = 'WWWW') {string {"W value"}}
+		}
+		Entry (id = 'CPRM')
+		{
+			string {"Set Shader\nColor Parameter"}
+			Entry (id = 'COLR') {string {"Color value"}}
+			Entry (id = 'PICK') {string {"Color Value"}}
+		}
+	}
+}
+Entry (id = 'FORC')
+{
+	Entry (id = 'GRAV')
+	{
+		string {"Gravity"}
+		Entry (id = 'ACCL') {string {"Gravity acceleration (m/s²)"}}
+	}
+	Entry (id = 'FLUD')
+	{
+		string {"Fluid"}
+		Entry (id = 'DENS') {string {"Fluid density"}}
+		Entry (id = 'LDRG') {string {"Linear drag coefficient"}}
+		Entry (id = 'ADRG') {string {"Angular drag coefficient"}}
+		Entry (id = 'SPED') {string {"Current speed (m/s)"}}
+		Entry (id = 'CDIR') {string {"Current direction (deg)"}}
+		Entry (id = 'WCON') {string {"Water block connector key"}}
+	}
+	Entry (id = 'WIND')
+	{
+		string {"Wind"}
+		Entry (id = 'SPED') {string {"Wind speed (m/s)"}}
+		Entry (id = 'DRAG') {string {"Drag coefficient"}}
+	}
+}
+Entry (id = 'PROP')
+{
+	Entry (id = 'CLER')
+	{
+		string {"Clear Color"}
+		Entry (id = 'COLR') {string {"Clear color"}}
+		Entry (id = 'PICK') {string {"Clear Color"}}
+	}
+	Entry (id = 'INTR')
+	{
+		string {"Interaction"}
+		Entry (id = 'DSAB') {string {"Initially disabled"}}
+	}
+	Entry (id = 'ACST')
+	{
+		string {"Acoustics"}
+		Entry (id = 'DRCT') {string {"Obstruction direct volume"}}
+		Entry (id = 'DRCH') {string {"Obstruction direct HF volume"}}
+		Entry (id = 'REFL') {string {"Obstruction reflection volume"}}
+		Entry (id = 'REFH') {string {"Obstruction reflection HF volume"}}
+	}
+	Entry (id = 'IPST')
+	{
+		string {"Impostor Texture"}
+		Entry (id = 'TNAM') {string {"Texture name"}}
+		Entry (id = 'TPCK') {string {"Texture Name"}}
+		Entry (id = 'WIDE') {string {"Texture width"}}
+		Entry (id = 'HIGH') {string {"Texture height"}}
+		Entry (id = 'USAG')
+		{
+			string {"Texture usage"}
+			Entry (id = 'COLR') {string {"Color map"}}
+			Entry (id = 'NRML') {string {"Normal map"}}
+			Entry (id = 'SHAD') {string {"Shadow map"}}
+		}
+		Entry (id = 'ALFA') {string {"Texture has alpha channel"}}
+		Entry (id = 'CLP1') {string {"Disable bottom corner clipping"}}
+		Entry (id = 'CLP2') {string {"Disable top corner clipping"}}
+	}
+}
+Entry (id = 'MDFR')
+{
+	Entry (id = 'AGMT')
+	{
+		string {"Augment Instance"}
+		Entry (id = 'WRLD') {string {"Instanced world name"}}
+		Entry (id = 'PICK') {string {"Instanced World"}}
+	}
+	Entry (id = 'WAKE') {string {"Wake Controller"}}
+	Entry (id = 'SLEP') {string {"Sleep Controller"}}
+	Entry (id = 'CONN')
+	{
+		string {"Connect Instance"}
+		Entry (id = 'CONN') {string {"Outgoing connector key"}}
+		Entry (id = 'NAME') {string {"Target node name"}}
+	}
+	Entry (id = 'MCON')
+	{
+		string {"Move Connector"}
+		Entry (id = 'CONN') {string {"Incoming connector key"}}
+		Entry (id = 'NAME') {string {"Target node name"}}
+	}
+	Entry (id = 'DELT')
+	{
+		string {"Delete Nodes"}
+		Entry (id = 'NAME') {string {"Node name (blank for all)"}}
+	}
+	Entry (id = 'PSRP')
+	{
+		string {"Set Perspective Mask"}
+		Entry (id = 'NAME') {string {"Node name (blank for all)"}}
+	}
+	Entry (id = 'EINT')
+	{
+		string {"Enable Interactivity"}
+		Entry (id = 'NAME') {string {"Node name (blank for all)"}}
+	}
+	Entry (id = 'DINT')
+	{
+		string {"Disable Interactivity"}
+		Entry (id = 'NAME') {string {"Node name (blank for all)"}}
+	}
+	Entry (id = 'MATL')
+	{
+		string {"Replace Material"}
+		Entry (id = 'NAME') {string {"Node name (blank for all)"}}
+	}
+	Entry (id = 'RPHY') {string {"Remove Physics"}}
+	Entry (id = 'TYPE')
+	{
+		string {"Node type"}
+		Entry (id = 'NONE') {string {"<any>"}}
+		Entry (id = 'BONE') {string {"Bone"}}
+		Entry (id = 'CAMR') {string {"Camera"}}
+		Entry (id = 'EFCT') {string {"Effect"}}
+		Entry (id = 'EMIT') {string {"Emitter"}}
+		Entry (id = 'GEOM') {string {"Geometry"}}
+		Entry (id = 'IPST') {string {"Impostor"}}
+		Entry (id = 'INST') {string {"Instance"}}
+		Entry (id = 'LITE') {string {"Light"}}
+		Entry (id = 'MARK') {string {"Marker"}}
+		Entry (id = 'MODL') {string {"Model"}}
+		Entry (id = 'PORT') {string {"Portal"}}
+		Entry (id = 'SORC') {string {"Source"}}
+		Entry (id = 'SPAC') {string {"Space"}}
+		Entry (id = 'TRIG') {string {"Trigger"}}
+		Entry (id = 'ZONE') {string {"Zone"}}
+	}
+}
+Entry (id = 'WDGT')
+{
+	Entry (id = 'WDGT')
+	{
+		Entry (id = 'SETT') {string {"General Settings"}}
+		Entry (id = 'IDNT') {string {"Widget identifier"}}
+		Entry (id = 'WCOL') {string {"Widget color"}}
+		Entry (id = 'CPCK') {string {"Widget Color"}}
+		Entry (id = 'DSAB') {string {"Initially disabled"}}
+		Entry (id = 'HIDN') {string {"Initially hidden"}}
+		Entry (id = 'ANCX')
+		{
+			string {"Anchor mode X"}
+			Entry (id = 'NONE') {string {"None"}}
+			Entry (id = 'LEFT') {string {"Left"}}
+			Entry (id = 'RGHT') {string {"Right"}}
+			Entry (id = 'CENT') {string {"Center"}}
+		}
+		Entry (id = 'ANCY')
+		{
+			string {"Anchor mode Y"}
+			Entry (id = 'NONE') {string {"None"}}
+			Entry (id = 'TOP ') {string {"Top"}}
+			Entry (id = 'BTTM') {string {"Bottom"}}
+			Entry (id = 'CENT') {string {"Center"}}
+		}
+		Entry (id = 'BTYP')
+		{
+			string {"Balloon type"}
+			Entry (id = 'NONE') {string {"None"}}
+			Entry (id = 'TEXT') {string {"Text string"}}
+			Entry (id = 'RSRC') {string {"Resource name"}}
+		}
+		Entry (id = 'BSTR') {string {"Balloon string"}}
+		Entry (id = 'BPCK') {string {"Balloon Resource"}}
+		Entry (id = 'CTYP')
+		{
+			string {"Color type"}
+			Entry (id = 'DFLT') {string {"Default"}}
+			Entry (id = 'TEXT') {string {"Text"}}
+			Entry (id = 'LINE') {string {"Line"}}
+			Entry (id = 'BRDR') {string {"Border"}}
+			Entry (id = 'BKGD') {string {"Background"}}
+			Entry (id = 'BTTN') {string {"Button"}}
+			Entry (id = 'HLIT') {string {"Highlight"}}
+			Entry (id = 'FOCS') {string {"Focus glow"}}
+			Entry (id = 'CART') {string {"Insertion caret"}}
+		}
+	}
+	Entry (id = 'LINE')
+	{
+		string {"Line"}
+		Entry (id = 'SETT') {string {"Line Settings"}}
+		Entry (id = 'STYL')
+		{
+			string {"Line style"}
+			Entry (id = 'SOLD') {string {"Solid"}}
+			Entry (id = 'DOT1') {string {"Dotted 1"}}
+			Entry (id = 'DOT2') {string {"Dotted 2"}}
+			Entry (id = 'DASH') {string {"Dashed"}}
+		}
+	}
+	Entry (id = 'BRDR')
+	{
+		string {"Border"}
+		Entry (id = 'SETT') {string {"Border Settings"}}
+	}
+	Entry (id = 'TEXT')
+	{
+		string {"Text"}
+		Entry (id = 'SETT') {string {"Text Settings"}}
+		Entry (id = 'FONT') {string {"Text font"}}
+		Entry (id = 'FPCK') {string {"Text Font"}}
+		Entry (id = 'ALGN')
+		{
+			string {"Alignment"}
+			Entry (id = 'LEFT') {string {"Left"}}
+			Entry (id = 'CENT') {string {"Center"}}
+			Entry (id = 'RGHT') {string {"Right"}}
+		}
+		Entry (id = 'TSCL') {string {"Text scale"}}
+		Entry (id = 'LEAD') {string {"Extra leading"}}
+		Entry (id = 'SNGL') {string {"Display as single line"}}
+	}
+	Entry (id = 'EDIT')
+	{
+		string {"Edit Text"}
+		Entry (id = 'SETT') {string {"Edit Text Settings"}}
+		Entry (id = 'MAXL') {string {"Maximum length"}}
+		Entry (id = 'FILT')
+		{
+			string {"Character filter"}
+			Entry (id = 'NONE') {string {"None"}}
+			Entry (id = 'NUMB') {string {"Numbers"}}
+			Entry (id = 'SNUM') {string {"Signed numbers"}}
+			Entry (id = 'FLOT') {string {"Floating-point"}}
+			Entry (id = 'ALPH') {string {"Alphanumeric"}}
+			Entry (id = 'IDNT') {string {"Identifier"}}
+		}
+		Entry (id = 'OVER') {string {"Allow text to overflow"}}
+		Entry (id = 'MULT') {string {"Use multiple lines"}}
+		Entry (id = 'READ') {string {"Text is read-only"}}
+		Entry (id = 'CHNG') {string {"Select all when changed"}}
+		Entry (id = 'DOUB') {string {"Select all on double-click"}}
+		Entry (id = 'REND') {string {"Render plain (text only)"}}
+		Entry (id = 'FPLN') {string {"Render focus plain (no glow)"}}
+		Entry (id = 'BGDC') {string {"Background color"}}
+		Entry (id = 'BGDP') {string {"Background Color"}}
+		Entry (id = 'BRDC') {string {"Border color"}}
+		Entry (id = 'BRDP') {string {"Border Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+		Entry (id = 'FOCC') {string {"Focus glow color"}}
+		Entry (id = 'FOCP') {string {"Focus Glow Color"}}
+		Entry (id = 'CRTC') {string {"Insertion caret color"}}
+		Entry (id = 'CRTP') {string {"Insertion Caret Color"}}
+	}
+	Entry (id = 'PASS') {string {"Password"}}
+	Entry (id = 'QUAD')
+	{
+		string {"Quad"}
+		Entry (id = 'SETT') {string {"Quad Settings"}}
+		Entry (id = 'GRAD')
+		{
+			string {"Gradient type"}
+			Entry (id = 'NONE') {string {"None"}}
+			Entry (id = 'HORZ') {string {"Horizontal"}}
+			Entry (id = 'VERT') {string {"Vertical"}}
+		}
+		Entry (id = 'COL1') {string {"Gradient color 1"}}
+		Entry (id = 'COL2') {string {"Gradient color 2"}}
+	}
+	Entry (id = 'IMAG')
+	{
+		string {"Image"}
+		Entry (id = 'SETT') {string {"Image Settings"}}
+		Entry (id = 'TXT1') {string {"Primary texture map"}}
+		Entry (id = 'TPK1') {string {"Primary Texture Map"}}
+		Entry (id = 'TXT2') {string {"Secondary texture map"}}
+		Entry (id = 'TPK2') {string {"Secondary Texture Map"}}
+		Entry (id = 'XSCL') {string {"X scale"}}
+		Entry (id = 'YSCL') {string {"Y scale"}}
+		Entry (id = 'XOFF') {string {"X offset"}}
+		Entry (id = 'YOFF') {string {"Y offset"}}
+		Entry (id = 'BLND')
+		{
+			string {"Blend mode"}
+			Entry (id = 'ADD ') {string {"Add"}}
+			Entry (id = 'ADDA') {string {"Alpha add"}}
+			Entry (id = 'TERP') {string {"Alpha blend"}}
+			Entry (id = 'PREM') {string {"Alpha preblend"}}
+			Entry (id = 'REPL') {string {"Replace"}}
+		}
+	}
+	Entry (id = 'CHCK')
+	{
+		string {"Check Box"}
+		Entry (id = 'SETT') {string {"Check Box Settings"}}
+		Entry (id = 'INIT') {string {"Initially checked"}}
+		Entry (id = 'SLCT') {string {"Use highlight when selected"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'RDIO')
+	{
+		string {"Radio Button"}
+		Entry (id = 'SETT') {string {"Radio Button Settings"}}
+		Entry (id = 'INIT') {string {"Initially selected"}}
+		Entry (id = 'SLCT') {string {"Use highlight when selected"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'PUSH')
+	{
+		string {"Push Button"}
+		Entry (id = 'SETT') {string {"Push Button Settings"}}
+		Entry (id = 'PRIM') {string {"Primary button"}}
+		Entry (id = 'AKEY')
+		{
+			string {"Activation key"}
+			Entry (id = 'NONE') {string {"<none>"}}
+			Entry (id = 'ENTR') {string {"Enter"}}
+			Entry (id = 'ESCP') {string {"Escape"}}
+		}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+	}
+	Entry (id = 'ICON')
+	{
+		string {"Icon Button"}
+		Entry (id = 'SETT') {string {"Icon Button Settings"}}
+		Entry (id = 'STCK') {string {"Stays selected when clicked"}}
+		Entry (id = 'INIT') {string {"Initially selected"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+	}
+	Entry (id = 'TBUT')
+	{
+		string {"Text Button"}
+		Entry (id = 'SETT') {string {"Text Button Settings"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'LINK')
+	{
+		string {"Hyperlink"}
+		Entry (id = 'SETT') {string {"Hyperlink Settings"}}
+		Entry (id = 'HURL') {string {"Hyperlink URL"}}
+	}
+	Entry (id = 'COLR')
+	{
+		string {"Color Box"}
+		Entry (id = 'SETT') {string {"Color Box Settings"}}
+		Entry (id = 'INIT') {string {"Initial color value"}}
+		Entry (id = 'PICK') {string {"Initial Color Value"}}
+		Entry (id = 'TITL') {string {"Color picker title"}}
+		Entry (id = 'ALFA') {string {"Include alpha channel"}}
+		Entry (id = 'FOCC') {string {"Focus glow color"}}
+		Entry (id = 'FOCP') {string {"Focus Glow Color"}}
+	}
+	Entry (id = 'PROG')
+	{
+		string {"Progress Bar"}
+		Entry (id = 'SETT') {string {"Progress Bar Settings"}}
+		Entry (id = 'INIT') {string {"Initial value"}}
+		Entry (id = 'MAXV') {string {"Maximum value"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'SLID')
+	{
+		string {"Slider"}
+		Entry (id = 'SETT') {string {"Slider Settings"}}
+		Entry (id = 'STYL')
+		{
+			string {"Slider style"}
+			Entry (id = 'ROND') {string {"Round"}}
+			Entry (id = 'SQAR') {string {"Square"}}
+		}
+		Entry (id = 'INIT') {string {"Initial value"}}
+		Entry (id = 'MAXV') {string {"Maximum value"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+	}
+	Entry (id = 'SCRL')
+	{
+		string {"Scroll Bar"}
+		Entry (id = 'SETT') {string {"Scroll Bar Settings"}}
+		Entry (id = 'HORZ') {string {"Render horizontal buttons"}}
+		Entry (id = 'INIT') {string {"Initial value"}}
+		Entry (id = 'MAXV') {string {"Maximum value"}}
+		Entry (id = 'PAGE') {string {"Page up/down distance"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+	}
+	Entry (id = 'LIST')
+	{
+		string {"List"}
+		Entry (id = 'SETT') {string {"List Settings"}}
+		Entry (id = 'SPAC') {string {"Item spacing"}}
+		Entry (id = 'OFFX') {string {"Item offset X"}}
+		Entry (id = 'OFFY') {string {"Item offset Y"}}
+		Entry (id = 'MULT') {string {"Allow multiple selection"}}
+		Entry (id = 'FPLN') {string {"Render focus plain (no glow)"}}
+		Entry (id = 'FONT') {string {"Text item font"}}
+		Entry (id = 'PICK') {string {"Text Item Font"}}
+		Entry (id = 'BGDC') {string {"Background color"}}
+		Entry (id = 'BGDP') {string {"Background Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+		Entry (id = 'FOCC') {string {"Focus glow color"}}
+		Entry (id = 'FOCP') {string {"Focus Glow Color"}}
+	}
+	Entry (id = 'TABL')
+	{
+		string {"Table"}
+		Entry (id = 'SETT') {string {"Table Settings"}}
+		Entry (id = 'CLMN') {string {"Number of columns"}}
+		Entry (id = 'CELX') {string {"Cell size X"}}
+		Entry (id = 'CELY') {string {"Cell size Y"}}
+		Entry (id = 'OFFX') {string {"Item offset X"}}
+		Entry (id = 'OFFY') {string {"Item offset Y"}}
+		Entry (id = 'INSX') {string {"Highlight inset X"}}
+		Entry (id = 'INSY') {string {"Highlight inset Y"}}
+		Entry (id = 'MULT') {string {"Allow multiple selection"}}
+		Entry (id = 'FPLN') {string {"Render focus plain (no glow)"}}
+		Entry (id = 'BGDC') {string {"Background color"}}
+		Entry (id = 'BGDP') {string {"Background Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+		Entry (id = 'FOCC') {string {"Focus glow color"}}
+		Entry (id = 'FOCP') {string {"Focus Glow Color"}}
+	}
+	Entry (id = 'MPAN')
+	{
+		string {"Multipane"}
+		Entry (id = 'SETT') {string {"Multipane Settings"}}
+		Entry (id = 'FONT') {string {"Pane title font"}}
+		Entry (id = 'PICK') {string {"Pane Title Font"}}
+		Entry (id = 'PANE') {string {"Pane list"}}
+		Entry (id = 'SLCT') {string {"Initial selection"}}
+		Entry (id = 'BRDC') {string {"Border color"}}
+		Entry (id = 'BRDP') {string {"Border Color"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'POPM')
+	{
+		string {"Popup Menu"}
+		Entry (id = 'SETT') {string {"Popup Menu Settings"}}
+		Entry (id = 'REND') {string {"Render plain (text only)"}}
+		Entry (id = 'SPAC') {string {"Item spacing"}}
+		Entry (id = 'ITEM') {string {"Menu item list"}}
+		Entry (id = 'SLCT') {string {"Initial selection"}}
+		Entry (id = 'BTTC') {string {"Button color"}}
+		Entry (id = 'BTTP') {string {"Button Color"}}
+	}
+	Entry (id = 'MBAR')
+	{
+		string {"Menu Bar"}
+		Entry (id = 'SETT') {string {"Menu Bar Settings"}}
+		Entry (id = 'SPAC') {string {"Menu title spacing"}}
+		Entry (id = 'OFFY') {string {"Menu title offset Y"}}
+		Entry (id = 'FONT') {string {"Menu title font"}}
+		Entry (id = 'PICK') {string {"Menu Title Font"}}
+		Entry (id = 'HILC') {string {"Highlight color"}}
+		Entry (id = 'HILP') {string {"Highlight Color"}}
+	}
+	Entry (id = 'DVDR') {string {"Divider"}}
+	Entry (id = 'OVPT') {string {"Ortho Viewport"}}
+	Entry (id = 'FVPT') {string {"Frustum Viewport"}}
+	Entry (id = 'WRLD') {string {"World Viewport"}}
+	Entry (id = 'CNFG')
+	{
+		string {"Configuration"}
+		Entry (id = 'SETT') {string {"Configuration Settings"}}
+		Entry (id = 'TFRC') {string {"Title column fraction"}}
+		Entry (id = 'SCPT') {string {"Show script variable column"}}
+		Entry (id = 'LINC') {string {"Line color"}}
+		Entry (id = 'LINP') {string {"Line Color"}}
+		Entry (id = 'BGDC') {string {"Background color"}}
+		Entry (id = 'BGDP') {string {"Background Color"}}
+	}
+	Entry (id = 'PANT')
+	{
+		string {"Paint"}
+		Entry (id = 'SETT') {string {"Paint Settings"}}
+		Entry (id = 'XRES') {string {"Resolution X"}}
+		Entry (id = 'YRES') {string {"Resolution Y"}}
+		Entry (id = 'BACK') {string {"Background color"}}
+		Entry (id = 'PICK') {string {"Background Color"}}
+		Entry (id = 'BRAD') {string {"Initial brush radius"}}
+		Entry (id = 'BFUZ') {string {"Initial brush fuzziness"}}
+		Entry (id = 'BOPC') {string {"Initial brush opacity"}}
+		Entry (id = 'BCOL') {string {"Initial brush color"}}
+		Entry (id = 'PCOL') {string {"Initial Brush Color"}}
+	}
+	Entry (id = 'MOVI')
+	{
+		string {"Movie"}
+		Entry (id = 'SETT') {string {"Movie Settings"}}
+		Entry (id = 'NAME') {string {"Movie name"}}
+		Entry (id = 'PICK') {string {"Movie Resource"}}
+		Entry (id = 'PLAY') {string {"Movie is initially playing"}}
+		Entry (id = 'LOOP') {string {"Movie is looping"}}
+		Entry (id = 'BLND')
+		{
+			string {"Movie blend mode"}
+			Entry (id = 'ADD ') {string {"Add"}}
+			Entry (id = 'ADDA') {string {"Alpha add"}}
+			Entry (id = 'TERP') {string {"Alpha blend"}}
+			Entry (id = 'PREM') {string {"Alpha preblend"}}
+			Entry (id = 'REPL') {string {"Replace"}}
+		}
+		Entry (id = 'SCON') {string {"Source connector key"}}
+	}
+	Entry (id = 'CAMR')
+	{
+		string {"Camera"}
+		Entry (id = 'SETT') {string {"Camera Settings"}}
+		Entry (id = 'CCON') {string {"Camera connector"}}
+		Entry (id = 'MLEV') {string {"Minimum detail level"}}
+		Entry (id = 'BIAS') {string {"Detail level bias"}}
+	}
+	Entry (id = 'WIND')
+	{
+		Entry (id = 'WIDE') {string {"Window width"}}
+		Entry (id = 'HIGH') {string {"Window height"}}
+		Entry (id = 'TITL') {string {"Window title"}}
+		Entry (id = 'PLAN') {string {"Render plain (no frame)"}}
+		Entry (id = 'CLOS') {string {"Show close box"}}
+		Entry (id = 'RSIZ') {string {"Show resize handle"}}
+		Entry (id = 'BKGD') {string {"Fill background"}}
+		Entry (id = 'CENT') {string {"Display centered"}}
+		Entry (id = 'MXMZ') {string {"Display at maximum size"}}
+		Entry (id = 'EVEN') {string {"Allow only even sizes"}}
+		Entry (id = 'STRP') {string {"Include window in strip"}}
+		Entry (id = 'PASS') {string {"Window is passive"}}
+		Entry (id = 'SCAL')
+		{
+			string {"Display size scaling"}
+			Entry (id = 'NOSC') {string {"No scale"}}
+			Entry (id = 'HORZ') {string {"Full display width"}}
+			Entry (id = 'VERT') {string {"Full display height"}}
+		}
+	}
+}
+Entry (id = 'MUTR')
+{
+	Entry (id = 'SETT') {string {"General Mutator Settings"}}
+	Entry (id = 'IDNT') {string {"Mutator identifier"}}
+	Entry (id = 'DSAB') {string {"Initially disabled"}}
+	Entry (id = 'RVRS') {string {"Initially reversed"}}
+	Entry (id = 'PULS')
+	{
+		string {"Pulsate"}
+		Entry (id = 'SETT') {string {"Pulsate Settings"}}
+		Entry (id = 'COLR') {string {"Color"}}
+		Entry (id = 'PCOL') {string {"Pulsate Color"}}
+		Entry (id = 'WAVE')
+		{
+			string {"Wave type"}
+			Entry (id = 'SQAR') {string {"Square wave"}}
+			Entry (id = 'TRI ') {string {"Triangle wave"}}
+			Entry (id = 'SINE') {string {"Sine wave"}}
+		}
+		Entry (id = 'BLND')
+		{
+			string {"Blend mode"}
+			Entry (id = 'ITRP') {string {"Interpolate"}}
+			Entry (id = 'ADD ') {string {"Add"}}
+			Entry (id = 'MULT') {string {"Multiply"}}
+		}
+		Entry (id = 'FREQ') {string {"Pulse frequency (Hz)"}}
+		Entry (id = 'PHAS') {string {"Phase shift (s)"}}
+	}
+	Entry (id = 'RAND') {string {"Randomize"}}
+	Entry (id = 'SCRL')
+	{
+		string {"Scroll"}
+		Entry (id = 'SETT') {string {"Scroll Settings"}}
+		Entry (id = 'SPDX') {string {"X scroll speed (pixels/s)"}}
+		Entry (id = 'SPDY') {string {"Y scroll speed (pixels/s)"}}
+	}
+	Entry (id = 'ROTR')
+	{
+		string {"Rotate"}
+		Entry (id = 'SETT') {string {"Rotate Settings"}}
+		Entry (id = 'SPED') {string {"Rotation speed (rev/s)"}}
+	}
+	Entry (id = 'SCAL')
+	{
+		string {"Scale"}
+		Entry (id = 'SETT') {string {"Scale Settings"}}
+		Entry (id = 'STRT') {string {"Restartable"}}
+		Entry (id = 'TEXC') {string {"Scale texcoords"}}
+		Entry (id = 'FLPH') {string {"Flip horizontal origin"}}
+		Entry (id = 'FLPV') {string {"Flip vertical origin"}}
+		Entry (id = 'XSC1') {string {"X start scale"}}
+		Entry (id = 'YSC1') {string {"Y start scale"}}
+		Entry (id = 'XSC2') {string {"X finish scale"}}
+		Entry (id = 'YSC2') {string {"Y finish scale"}}
+		Entry (id = 'TIME') {string {"Scale time (s)"}}
+	}
+	Entry (id = 'FADE')
+	{
+		string {"Fade"}
+		Entry (id = 'SETT') {string {"Fade Settings"}}
+		Entry (id = 'STRT') {string {"Restartable"}}
+		Entry (id = 'COLR') {string {"Fade color"}}
+		Entry (id = 'PICK') {string {"Fade Color"}}
+		Entry (id = 'TIME') {string {"Fade time (s)"}}
+		Entry (id = 'FHID') {string {"Hide widget at finish"}}
+	}
+	Entry (id = 'TICK')
+	{
+		string {"Ticker"}
+		Entry (id = 'SETT') {string {"Ticker Settings"}}
+		Entry (id = 'STRT') {string {"Restartable"}}
+		Entry (id = 'LOOP') {string {"Looping"}}
+		Entry (id = 'SPOS') {string {"Start position"}}
+		Entry (id = 'FPOS') {string {"Finish position"}}
+		Entry (id = 'SPED') {string {"Scroll speed (pixels/s)"}}
+	}
+	Entry (id = 'ANIM')
+	{
+		string {"Animate"}
+		Entry (id = 'SETT') {string {"Animate Settings"}}
+		Entry (id = 'STRT') {string {"Restartable"}}
+		Entry (id = 'LOOP') {string {"Looping"}}
+		Entry (id = 'XCNT') {string {"Frames horizontally"}}
+		Entry (id = 'YCNT') {string {"Frames vertically"}}
+		Entry (id = 'TOTL') {string {"Total frame count"}}
+		Entry (id = 'RATE') {string {"Frame rate (frames/s)"}}
+	}
+}
+Entry (id = 'PROC')
+{
+	Entry (id = 'SECT')
+	{
+		string {"Section"}
+		Entry (id = 'COLR') {string {"Background color"}}
+		Entry (id = 'PICK') {string {"Background Color"}}
+	}
+	Entry (id = 'CNST')
+	{
+		Entry (id = 'SLOT')
+		{
+			string {"Parameter slot"}
+			Entry (id = 'CNST') {string {"Constant"}}
+			Entry (id = 'PRM0') {string {"Parameter 0"}}
+			Entry (id = 'PRM1') {string {"Parameter 1"}}
+			Entry (id = 'PRM2') {string {"Parameter 2"}}
+			Entry (id = 'PRM3') {string {"Parameter 3"}}
+			Entry (id = 'PRM4') {string {"Parameter 4"}}
+			Entry (id = 'PRM5') {string {"Parameter 5"}}
+			Entry (id = 'PRM6') {string {"Parameter 6"}}
+			Entry (id = 'PRM7') {string {"Parameter 7"}}
+		}
+	}
+	Entry (id = 'SCLR')
+	{
+		string {"Constant Scalar"}
+		Entry (id = 'VALU') {string {"Value"}}
+	}
+	Entry (id = 'VCTR')
+	{
+		string {"Constant Vector"}
+		Entry (id = 'XXXX') {string {"X value"}}
+		Entry (id = 'YYYY') {string {"Y value"}}
+		Entry (id = 'ZZZZ') {string {"Z value"}}
+		Entry (id = 'WWWW') {string {"W value"}}
+	}
+	Entry (id = 'COLR')
+	{
+		string {"Constant Color"}
+		Entry (id = 'COLR') {string {"Color value"}}
+		Entry (id = 'PICK') {string {"Color Value"}}
+	}
+	Entry (id = 'VCOL') {string {"Vertex Color"}}
+	Entry (id = 'FDEP') {string {"Fragment Depth"}}
+	Entry (id = 'DETL') {string {"Shader Detail\nParameter"}}
+	Entry (id = 'TIME') {string {"Shader Time"}}
+	Entry (id = 'TEXM')
+	{
+		string {"Texture Map"}
+		Entry (id = 'TNAM') {string {"Texture name"}}
+		Entry (id = 'PICK') {string {"Texture"}}
+	}
+	Entry (id = 'NRMM') {string {"Normal Map"}}
+	Entry (id = 'ITEX') {string {"Impostor Texture"}}
+	Entry (id = 'INRM') {string {"Impostor Normal"}}
+	Entry (id = 'TTEX')
+	{
+		string {"Terrain Texture"}
+		Entry (id = 'BMOD')
+		{
+			string {"Blend mode"}
+			Entry (id = 'BLND') {string {"Full blend"}}
+			Entry (id = 'TEXA') {string {"Primary (A) only"}}
+			Entry (id = 'TEXB') {string {"Secondary (B) only"}}
+		}
+	}
+	Entry (id = 'TNRM') {string {"Terrain Normal 1"}}
+	Entry (id = 'TNM2') {string {"Terrain Normal 2"}}
+	Entry (id = 'TNM3') {string {"Terrain Normal 3"}}
+	Entry (id = 'PTEX') {string {"Paint Texture"}}
+	Entry (id = 'MRG2') {string {"Merge 2D"}}
+	Entry (id = 'MRG3') {string {"Merge 3D"}}
+	Entry (id = 'MRG4') {string {"Merge 4D"}}
+	Entry (id = 'TEX0') {string {"Texcoord 1"}}
+	Entry (id = 'TEX1') {string {"Texcoord 2"}}
+	Entry (id = 'PTXC') {string {"Paint Texcoord"}}
+	Entry (id = 'GEOM') {string {"Vertex Geometry"}}
+	Entry (id = 'POSI') {string {"Object-Space\nVertex Position"}}
+	Entry (id = 'WPOS') {string {"World-Space\nVertex Position"}}
+	Entry (id = 'NRML') {string {"Object-Space\nNormal"}}
+	Entry (id = 'TANG') {string {"Object-Space\nTangent"}}
+	Entry (id = 'BTNG') {string {"Object-Space\nBitangent"}}
+	Entry (id = 'WNRM') {string {"World-Space\nNormal"}}
+	Entry (id = 'WTAN') {string {"World-Space\nTangent"}}
+	Entry (id = 'WBTN') {string {"World-Space\nBitangent"}}
+	Entry (id = 'LDIR') {string {"Tangent-Space\nLight Direction"}}
+	Entry (id = 'VDIR') {string {"Tangent-Space\nView Direction"}}
+	Entry (id = 'HDIR') {string {"Tangent-Space\nHalfway Direction"}}
+	Entry (id = 'OLDR') {string {"Object-Space\nLight Direction"}}
+	Entry (id = 'OVDR') {string {"Object-Space\nView Direction"}}
+	Entry (id = 'OHDR') {string {"Object-Space\nHalfway Direction"}}
+	Entry (id = 'LVEC') {string {"Full Tangent-Space\nLight Vector"}}
+	Entry (id = 'VVEC') {string {"Full Tangent-Space\nView Vector"}}
+	Entry (id = 'OLVC') {string {"Full Object-Space\nLight Vector"}}
+	Entry (id = 'OVVC') {string {"Full Object-Space\nView Vector"}}
+	Entry (id = 'ABS ') {string {"Absolute Value"}}
+	Entry (id = 'ADD ') {string {"Add"}}
+	Entry (id = 'SUB ') {string {"Subtract"}}
+	Entry (id = 'AVG ') {string {"Average"}}
+	Entry (id = 'INV ') {string {"Invert"}}
+	Entry (id = 'VEX ') {string {"Expand"}}
+	Entry (id = 'MUL ') {string {"Multiply"}}
+	Entry (id = 'MAD ') {string {"Multiply Add"}}
+	Entry (id = 'LRP ') {string {"Linear\nInterpolate"}}
+	Entry (id = 'DIV ') {string {"Divide"}}
+	Entry (id = 'DP3 ') {string {"Dot Product 3D"}}
+	Entry (id = 'DP4 ') {string {"Dot Product 4D"}}
+	Entry (id = 'XPD ') {string {"Cross Product"}}
+	Entry (id = 'RCP ') {string {"Reciprocal"}}
+	Entry (id = 'RSQ ') {string {"Reciprocal\nSquare Root"}}
+	Entry (id = 'SQR ') {string {"Square Root"}}
+	Entry (id = 'MAG ') {string {"Magnitude 3D"}}
+	Entry (id = 'NRM ') {string {"Normalize 3D"}}
+	Entry (id = 'FLR ') {string {"Floor"}}
+	Entry (id = 'RND ') {string {"Round"}}
+	Entry (id = 'FRC ') {string {"Fraction"}}
+	Entry (id = 'SAT ') {string {"Saturate"}}
+	Entry (id = 'MIN ') {string {"Minimum"}}
+	Entry (id = 'MAX ') {string {"Maximum"}}
+	Entry (id = 'SLT ') {string {"Set if\nLess Than"}}
+	Entry (id = 'SGT ') {string {"Set if\nGreater Than"}}
+	Entry (id = 'SLE ') {string {"Set if\nLess Equal"}}
+	Entry (id = 'SGE ') {string {"Set if\nGreater Equal"}}
+	Entry (id = 'SEQ ') {string {"Set if\nEqual"}}
+	Entry (id = 'SNE ') {string {"Set if\nNot Equal"}}
+	Entry (id = 'SIN ') {string {"Sine"}}
+	Entry (id = 'COS ') {string {"Cosine"}}
+	Entry (id = 'EX2 ') {string {"Exp Base 2"}}
+	Entry (id = 'LG2 ') {string {"Log Base 2"}}
+	Entry (id = 'POW ') {string {"Power"}}
+	Entry (id = 'DIFF') {string {"Diffuse\nReflection"}}
+	Entry (id = 'SPEC') {string {"Specular\nReflection"}}
+	Entry (id = 'MCFT')
+	{
+		string {"Microfacet\nReflection"}
+		Entry (id = 'COLR') {string {"Microfacet color"}}
+		Entry (id = 'SLPX') {string {"Microfacet slope x"}}
+		Entry (id = 'SLPY') {string {"Microfacet slope y"}}
+	}
+	Entry (id = 'TDIF') {string {"Terrain Diffuse\nReflection"}}
+	Entry (id = 'TSPC') {string {"Terrain Specular\nReflection"}}
+	Entry (id = 'BTNL') {string {"Blend Terrain\nNormals"}}
+	Entry (id = 'GINM') {string {"Generate Impostor Normal"}}
+	Entry (id = 'IDEP') {string {"Generate Impostor Depth"}}
+	Entry (id = 'CNRM') {string {"Combine Normals"}}
+	Entry (id = 'FNRM') {string {"Front Normal"}}
+	Entry (id = 'RVEC') {string {"Reflect Vector"}}
+	Entry (id = 'RAMP')
+	{
+		string {"Linear Ramp"}
+		Entry (id = 'CENT') {string {"Ramp center"}}
+		Entry (id = 'WIDE') {string {"Ramp width"}}
+	}
+	Entry (id = 'SMTH') {string {"Smooth Parameter"}}
+	Entry (id = 'STEP') {string {"Steep Parameter"}}
+	Entry (id = 'WXFM') {string {"Tangent to World\nTransform"}}
+	Entry (id = 'DLTA')
+	{
+		string {"Delta Depth"}
+		Entry (id = 'SCAL') {string {"Delta scale"}}
+	}
+	Entry (id = 'PLAX')
+	{
+		string {"Parallax Offset"}
+		Entry (id = 'DETL') {string {"High detail shader only"}}
+	}
+	Entry (id = 'HRZN')
+	{
+		string {"Horizon Shadow"}
+		Entry (id = 'TNM2') {string {"Secondary texture name"}}
+		Entry (id = 'PICK') {string {"Secondary Texture"}}
+		Entry (id = 'XINF') {string {"Exclude infinite lights"}}
+		Entry (id = 'XPNT') {string {"Exclude point lights"}}
+		Entry (id = 'DETL') {string {"High detail shader only"}}
+	}
+	Entry (id = 'KILL') {string {"Kill Fragment"}}
+	Entry (id = 'IMPX') {string {"Impostor\nTransition Kill"}}
+	Entry (id = 'GEOX')
+	{
+		string {"Geometry\nTransition Kill"}
+		Entry (id = 'DETL') {string {"Low detail shader only"}}
+	}
+	Entry (id = 'INPT')
+	{
+		string {"Input"}
+		Entry (id = 'PORT') {string {"Port name"}}
+	}
+	Entry (id = 'AMBT') {string {"Ambient\nReflection\nOutput"}}
+	Entry (id = 'ALFA') {string {"Alpha\nOutput"}}
+	Entry (id = 'EMIS') {string {"Emission\nOutput"}}
+	Entry (id = 'REFL')
+	{
+		string {"Reflection\nBuffer\nOutput"}
+		Entry (id = 'NINC') {string {"Normal incidence reflectivity"}}
+		Entry (id = 'RFLO') {string {"Reflection offset scale"}}
+	}
+	Entry (id = 'REFR')
+	{
+		string {"Refraction\nBuffer\nOutput"}
+		Entry (id = 'RFRO') {string {"Refraction offset scale"}}
+	}
+	Entry (id = 'ENVR')
+	{
+		string {"Environment\nOutput"}
+		Entry (id = 'TNAM') {string {"Environment override name"}}
+		Entry (id = 'PICK') {string {"Environment Map"}}
+	}
+	Entry (id = 'TENV')
+	{
+		string {"Terrain\nEnvironment\nOutput"}
+		Entry (id = 'TNAM') {string {"Environment override name"}}
+		Entry (id = 'PICK') {string {"Environment Map"}}
+	}
+	Entry (id = 'GLOW') {string {"Glow\nOutput"}}
+	Entry (id = 'IMPZ') {string {"Impostor Depth\nOutput"}}
+	Entry (id = 'LITE') {string {"Light\nReflection\nOutput"}}
+	Entry (id = 'BLOM') {string {"Bloom\nOutput"}}
+	Entry (id = 'ATST') {string {"Alpha Test\nOutput"}}
+	Entry (id = 'CMNT') {string {"Comment"}}
+}
+Entry (id = 'ROUT')
+{
+	Entry (id = 'NEGA') {string {"Negate"}}
+	Entry (id = 'SWIZ') {string {"Swizzle"}}
+}
+Entry (id = 'CONS')
+{
+	Entry (id = 'ADDR') {string {"[#FFF]Local address = [#8FF]"}}
+	Entry (id = 'NONT') {string {"[#FF8]Network not initialized"}}
+	Entry (id = 'RSLV') {string {"[#FFF]Resolving [#8FF]"}}
+	Entry (id = 'RERR') {string {"[#FF8]Unable to resolve"}}
+	Entry (id = 'RNAM') {string {"  [#FFF]Name = [#8FF]"}}
+	Entry (id = 'RADR') {string {"  [#FFF]IP Address = [#8FF]"}}
+}
+Entry (id = 'SHRT')
+{
+	Entry (id = 'CTRL') {string {"Ctrl-"}}
+	Entry (id = 'COMM') {string {"Cmd-"}}
+	Entry (id = 'SHFT') {string {"Shift-"}}
+	Entry (id = 'LTAR') {string {"Left"}}
+	Entry (id = 'RTAR') {string {"Right"}}
+	Entry (id = 'UPAR') {string {"Up"}}
+	Entry (id = 'DNAR') {string {"Down"}}
+	Entry (id = 'DELT') {string {"Delete"}}
+}
+Entry (id = 'MENU')
+{
+	Entry (id = 'TOOL')
+	{
+		string {"Tools"}
+		Entry (id = 'CONS') {string {"Command Console"}}
+		Entry (id = 'TIME') {string {"Time Window"}}
+		Entry (id = 'STAT') {string {"Stats Window"}}
+		Entry (id = 'NTWK') {string {"Network Window"}}
+		Entry (id = 'SHOT') {string {"Take Screenshot"}}
+		Entry (id = 'QUIT') {string {"Quit"}}
+	}
+}
+Entry (id = 'RSLT')
+{
+	Entry (id = 'C4C4')
+	{
+		Entry (id = 'MLOD') {string {"The module could not be loaded."}}
+		Entry (id = 'MINT') {string {"The module could not be initialized."}}
+		Entry (id = 'MCON') {string {"The module's construction function is missing."}}
+	}
+	Entry (id = 'FLFL')
+	{
+		Entry (id = 'OPEN') {string {"The file could not be opened."}}
+		Entry (id = 'IOIO') {string {"There was an IO error when accessing the file."}}
+		Entry (id = 'LOCK') {string {"The file is locked (read-only)."}}
+		Entry (id = 'ACCS') {string {"Access to the file was denied."}}
+		Entry (id = 'PROT') {string {"The disk is write-protected."}}
+		Entry (id = 'FULL') {string {"The disk is full."}}
+		Entry (id = 'CREA') {string {"The file could not be created."}}
+		Entry (id = 'DELT') {string {"The file could not be deleted."}}
+	}
+	Entry (id = 'RSRS')
+	{
+		Entry (id = 'NFND') {string {"The resource was not found."}}
+		Entry (id = 'LOAD') {string {"The resource could not be loaded."}}
+		Entry (id = 'PINV') {string {"The pack file is invalid."}}
+	}
+	Entry (id = 'ININ')
+	{
+		Entry (id = 'INIT') {string {"The Input Manager could not be initialized."}}
+	}
+	Entry (id = 'DSDS')
+	{
+		Entry (id = 'INIT') {string {"The Display Manager could not be initialized."}}
+	}
+	Entry (id = 'GRGR')
+	{
+		Entry (id = 'FORM') {string {"Graphics context format selection failed."}}
+		Entry (id = 'CTXT') {string {"A graphics context could not be initialized."}}
+		Entry (id = 'HARD') {string {"Required graphics hardware features are not available."}}
+	}
+	Entry (id = 'SDSD')
+	{
+		Entry (id = 'INIT') {string {"The Sound Manager could not be initialized."}}
+		Entry (id = 'LOAD') {string {"The sound could not be loaded."}}
+		Entry (id = 'PLAY') {string {"The sound could not be played."}}
+		Entry (id = 'FINV') {string {"The sound format is invalid."}}
+		Entry (id = 'SIZE') {string {"The sound is too large not to be streamed."}}
+	}
+	Entry (id = 'ACAC')
+	{
+		Entry (id = 'AVAL') {string {"Audio capture is not available."}}
+	}
+	Entry (id = 'VCVC')
+	{
+		Entry (id = 'AVAL') {string {"Video capture is not available."}}
+	}
+	Entry (id = 'MVMV')
+	{
+		Entry (id = 'LOAD') {string {"The movie could not be loaded."}}
+		Entry (id = 'VDEO') {string {"The movie does not have a video track."}}
+		Entry (id = 'ISIZ') {string {"The width and height of a movie must each be a multiple of 16 pixels."}}
+		Entry (id = 'ICON') {string {"All video frames in a movie must have the same dimensions."}}
+		Entry (id = 'ADIO') {string {"The imported audio track must be in uncompressed PCM format."}}
+		Entry (id = 'CANC') {string {"The movie import operation was cancelled."}}
+	}
+	Entry (id = 'NWNW')
+	{
+		Entry (id = 'INIT') {string {"The Network Manager could not be initialized."}}
+		Entry (id = 'CONN') {string {"There is no network connection."}}
+		Entry (id = 'PSIZ') {string {"The network packet is too large."}}
+		Entry (id = 'FULL') {string {"The network buffer is full."}}
+		Entry (id = 'PACK') {string {"There is no network packet."}}
+		Entry (id = 'UNRS') {string {"The domain name is unresolved."}}
+		Entry (id = 'RPND') {string {"The domain name resolution is pending."}}
+		Entry (id = 'RFAL') {string {"The domain name resolution failed."}}
+		Entry (id = 'RNFD') {string {"The domain name was not found."}}
+	}
+	Entry (id = 'WDWD')
+	{
+		Entry (id = 'LOAD') {string {"The world could not be loaded."}}
+	}
+	Entry (id = 'PLPL')
+	{
+		Entry (id = 'IFRM') {string {"The image file uses an unsupported format."}}
+		Entry (id = 'ISIZ') {string {"The dimensions of the image are not allowed by the specified texture format."}}
+		Entry (id = 'INDX') {string {"The image index is out of range."}}
+	}
+	Entry (id = 'DATA')
+	{
+		Entry (id = 'SYNT') {string {"(OpenDDL) Syntax error"}}
+		Entry (id = 'IDEM') {string {"(OpenDDL) Identifier expected"}}
+		Entry (id = 'IDIC') {string {"(OpenDDL) Identifier contains illegal character"}}
+		Entry (id = 'STIV') {string {"(OpenDDL) Invalid string literal"}}
+		Entry (id = 'STIC') {string {"(OpenDDL) String literal contains illegal character"}}
+		Entry (id = 'STIE') {string {"(OpenDDL) String literal contains illegal escape sequence"}}
+		Entry (id = 'STEF') {string {"(OpenDDL) End of file reached inside string literal"}}
+		Entry (id = 'CHIC') {string {"(OpenDDL) Character literal contains illegal character"}}
+		Entry (id = 'CHIE') {string {"(OpenDDL) Character literal contains illegal escape sequence"}}
+		Entry (id = 'CHEF') {string {"(OpenDDL) End of file reached inside character literal"}}
+		Entry (id = 'BLIV') {string {"(OpenDDL) Boolean value not \"true\" or \"false\""}}
+		Entry (id = 'TYIV') {string {"(OpenDDL) Data type value does not name primitive type"}}
+		Entry (id = 'INOV') {string {"(OpenDDL) Integer value lies outside range of representable values for number of bits in underlying type"}}
+		Entry (id = 'FLOV') {string {"(OpenDDL) Hexadecimal or binary literal used to represent floating-point value contains more bits than underlying type"}}
+		Entry (id = 'FLIV') {string {"(OpenDDL) Invalid floating-point literal"}}
+		Entry (id = 'RFIV') {string {"(OpenDDL) Invalid reference syntax"}}
+		Entry (id = 'STUD') {string {"(OpenDDL) Undefined structure"}}
+		Entry (id = 'STNE') {string {"(OpenDDL) Structure name already used"}}
+		Entry (id = 'PPSE') {string {"(OpenDDL) Syntax error in property list"}}
+		Entry (id = 'PPUD') {string {"(OpenDDL) Undefined property"}}
+		Entry (id = 'PPIT') {string {"(OpenDDL) Invalid property type"}}
+		Entry (id = 'PMSE') {string {"(OpenDDL) Syntax error in primitive data structure"}}
+		Entry (id = 'PMAS') {string {"(OpenDDL) Primitive data array size too large"}}
+		Entry (id = 'PMIF') {string {"(OpenDDL) Primitive data structure contains data in invalid format"}}
+		Entry (id = 'PMUS') {string {"(OpenDDL) Primitive array contains too few elements"}}
+		Entry (id = 'PMOS') {string {"(OpenDDL) Primitive array contains too many elements"}}
+		Entry (id = 'IVST') {string {"(OpenDDL) Invalid structure type for this location"}}
+		Entry (id = 'MSSB') {string {"(OpenDDL) Missing required substructure"}}
+		Entry (id = 'EXSB') {string {"(OpenDDL) Too many substructures of particular type"}}
+		Entry (id = 'ILDF') {string {"(OpenDDL) Primitive data uses illegal format (type or subarray size)"}}
+		Entry (id = 'BREF') {string {"(OpenDDL) Reference target does not exist"}}
+	}
+}

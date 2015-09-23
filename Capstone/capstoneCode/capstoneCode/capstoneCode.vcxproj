@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9302CBC-6806-4086-B37F-063FF7D0488E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>capstoneCode</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>C:\Users\Erik\Desktop\Capstone&amp;Engine\Capstone\erik_Erik_1982\C4 Engine\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CAPSTONECODE_EXPORTS;C4WINDOWS;C4DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\;C:\Users\Erik\Desktop\Capstone&amp;Engine\Capstone\erik_Erik_1982\C4 Engine\EngineCode\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Erik\Desktop\Capstone&amp;Engine\Capstone\erik_Erik_1982\C4 Engine\VisualStudio2013\C4\Engine\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Users\Erik\Desktop\Capstone&amp;Engine\Capstone\erik_Erik_1982\C4 Engine\VisualStudio2013\C4\Win32\Debug\C4Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CAPSTONECODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AddArmorAndWeaponToPlayersMessage.h" />
+    <ClInclude Include="AddWeaponToInventoryMessage.h" />
+    <ClInclude Include="ArmorPickupController.h" />
+    <ClInclude Include="AttackMessage.h" />
+    <ClInclude Include="ChangeAIStateMessage.h" />
+    <ClInclude Include="ChangeArmorMessage.h" />
+    <ClInclude Include="ChangeArmorMessageAll.h" />
+    <ClInclude Include="DataBaseType.h" />
+    <ClInclude Include="DestroyProjectileMessage.h" />
+    <ClInclude Include="AddArmorToInventoryMessage.h" />
+    <ClInclude Include="EntityBullet.h" />
+    <ClInclude Include="HealthPickUpController.h" />
+    <ClInclude Include="MyAttackState.h" />
+    <ClInclude Include="MySelfDestructAction.h" />
+    <ClInclude Include="NewProjectileRequestMessage.h" />
+    <ClInclude Include="ClientPickUpMessage.h" />
+    <ClInclude Include="EntityArmor.h" />
+    <ClInclude Include="EntityDamageable.h" />
+    <ClInclude Include="EntityEnemies.h" />
+    <ClInclude Include="EntityEquippable.h" />
+    <ClInclude Include="EntityFuel.h" />
+    <ClInclude Include="EntityHealth.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="EntityMoveable.h" />
+    <ClInclude Include="EntityNotMoveable.h" />
+    <ClInclude Include="EntityPickups.h" />
+    <ClInclude Include="EntityPlayer.h" />
+    <ClInclude Include="EntityPowerups.h" />
+    <ClInclude Include="EntityProps.h" />
+    <ClInclude Include="EntityRemoverMessage.h" />
+    <ClInclude Include="EntityScenery.h" />
+    <ClInclude Include="EntityScraps.h" />
+    <ClInclude Include="EntityUndamageable.h" />
+    <ClInclude Include="EntityWeapon.h" />
+    <ClInclude Include="FuelPickUpController.h" />
+    <ClInclude Include="InventoryWindow.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="MyAIController.h" />
+    <ClInclude Include="ClientMovementMessage.h" />
+    <ClInclude Include="ClientOrientationMessage.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="MyAttackAction.h" />
+    <ClInclude Include="MyBaseState.h" />
+    <ClInclude Include="EntityBase.h" />
+    <ClInclude Include="MyChaseState.h" />
+    <ClInclude Include="MyHud.h" />
+    <ClInclude Include="MyIdleState.h" />
+    <ClInclude Include="MyMessages.h" />
+    <ClInclude Include="MyCamera.h" />
+    <ClInclude Include="MyMoveAction.h" />
+    <ClInclude Include="MyPauseAction.h" />
+    <ClInclude Include="MyPlayerController.h" />
+    <ClInclude Include="MyPlayerManager.h" />
+    <ClInclude Include="MyProjectileController.h" />
+    <ClInclude Include="MyWorld.h" />
+    <ClInclude Include="GamePlayer.h" />
+    <ClInclude Include="Pathfinding.h" />
+    <ClInclude Include="PickUpController.h" />
+    <ClInclude Include="PickUpObtainedMessage.h" />
+    <ClInclude Include="PlayerChangeAnimationStateMessage.h" />
+    <ClInclude Include="PlayerDestroyMessage.h" />
+    <ClInclude Include="PlayerInformationMessage.h" />
+    <ClInclude Include="PlayerKillRequestMessage.h" />
+    <ClInclude Include="PlayerMovementMessage.h" />
+    <ClInclude Include="PlayerOrientationMessage.h" />
+    <ClInclude Include="PlayerStateMessage.h" />
+    <ClInclude Include="RemoveArmorAndWeaponsFromInventoryMessage.h" />
+    <ClInclude Include="RequestMessage.h" />
+    <ClInclude Include="RequestRenameMessage.h" />
+    <ClInclude Include="ScrapPickUpController.h" />
+    <ClInclude Include="ServerHealthUpdateMessage.h" />
+    <ClInclude Include="SoundMessage.h" />
+    <ClInclude Include="SparkParticleSystem.h" />
+    <ClInclude Include="SpawnMessage.h" />
+    <ClInclude Include="SpawnParticleMessage.h" />
+    <ClInclude Include="UpdateWeaponMessage.h" />
+    <ClInclude Include="UpdateWeaponMessageAll.h" />
+    <ClInclude Include="SpawnProjectileMessage.h" />
+    <ClInclude Include="WeaponPickupController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddArmorAndWeaponToPlayersMessage.cpp" />
+    <ClCompile Include="AddArmorToInventoryMessage.cpp" />
+    <ClCompile Include="AddWeaponToInventoryMessage.cpp" />
+    <ClCompile Include="ArmorPickupController.cpp" />
+    <ClCompile Include="AttackMessage.cpp" />
+    <ClCompile Include="ChangeAIStateMessage.cpp" />
+    <ClCompile Include="ChangeArmorMessage.cpp" />
+    <ClCompile Include="ChangeArmorMessageAll.cpp" />
+    <ClCompile Include="DataBaseType.cpp" />
+    <ClCompile Include="DestroyProjectileMessage.cpp" />
+    <ClCompile Include="EntityBullet.cpp" />
+    <ClCompile Include="HealthPickUpController.cpp" />
+    <ClCompile Include="MyAttackState.cpp" />
+    <ClCompile Include="MySelfDestructAction.cpp" />
+    <ClCompile Include="NewProjectileRequestMessage.cpp" />
+    <ClCompile Include="ClientPickUpMessage.cpp" />
+    <ClCompile Include="EntityArmor.cpp" />
+    <ClCompile Include="EntityDamageable.cpp" />
+    <ClCompile Include="EntityEnemies.cpp" />
+    <ClCompile Include="EntityEquippable.cpp" />
+    <ClCompile Include="EntityFuel.cpp" />
+    <ClCompile Include="EntityHealth.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="EntityMoveable.cpp" />
+    <ClCompile Include="EntityNotMoveable.cpp" />
+    <ClCompile Include="EntityPickups.cpp" />
+    <ClCompile Include="EntityPlayer.cpp" />
+    <ClCompile Include="EntityPowerups.cpp" />
+    <ClCompile Include="EntityProps.cpp" />
+    <ClCompile Include="EntityRemoverMessage.cpp" />
+    <ClCompile Include="EntityScenery.cpp" />
+    <ClCompile Include="EntityScraps.cpp" />
+    <ClCompile Include="EntityUndamageable.cpp" />
+    <ClCompile Include="EntityWeapon.cpp" />
+    <ClCompile Include="FuelPickUpController.cpp" />
+    <ClCompile Include="InventoryWindow.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="MyAIController.cpp" />
+    <ClCompile Include="ClientMovementMessage.cpp" />
+    <ClCompile Include="ClientOrientationMessage.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="MyAttackAction.cpp" />
+    <ClCompile Include="MyBaseState.cpp" />
+    <ClCompile Include="MyCamera.cpp" />
+    <ClCompile Include="EntityBase.cpp" />
+    <ClCompile Include="MyChaseState.cpp" />
+    <ClCompile Include="MyHud.cpp" />
+    <ClCompile Include="MyIdleState.cpp" />
+    <ClCompile Include="MyMoveAction.cpp" />
+    <ClCompile Include="MyPauseAction.cpp" />
+    <ClCompile Include="MyPlayerController.cpp" />
+    <ClCompile Include="MyPlayerManager.cpp" />
+    <ClCompile Include="MyProjectileController.cpp" />
+    <ClCompile Include="MyWorld.cpp" />
+    <ClCompile Include="GamePlayer.cpp" />
+    <ClCompile Include="Pathfinding.cpp" />
+    <ClCompile Include="PickUpController.cpp" />
+    <ClCompile Include="PickUpObtainedMessage.cpp" />
+    <ClCompile Include="PlayerChangeAnimationStateMessage.cpp" />
+    <ClCompile Include="PlayerDestroyMessage.cpp" />
+    <ClCompile Include="PlayerInformationMessage.cpp" />
+    <ClCompile Include="PlayerKillRequestMessage.cpp" />
+    <ClCompile Include="PlayerMovementMessage.cpp" />
+    <ClCompile Include="PlayerOrientationMessage.cpp" />
+    <ClCompile Include="PlayerStateMessage.cpp" />
+    <ClCompile Include="RemoveArmorAndWeaponsFromInventoryMessage.cpp" />
+    <ClCompile Include="RequestMessage.cpp" />
+    <ClCompile Include="RequestRenameMessage.cpp" />
+    <ClCompile Include="ScrapPickUpController.cpp" />
+    <ClCompile Include="ServerHealthUpdateMessage.cpp" />
+    <ClCompile Include="SoundMessage.cpp" />
+    <ClCompile Include="SparkParticleSystem.cpp" />
+    <ClCompile Include="SpawnMessage.cpp" />
+    <ClCompile Include="SpawnParticleMessage.cpp" />
+    <ClCompile Include="UpdateWeaponMessage.cpp" />
+    <ClCompile Include="UpdateWeaponMessageAll.cpp" />
+    <ClCompile Include="SpawnProjectileMessage.cpp" />
+    <ClCompile Include="WeaponPickupController.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Message Files">
+      <UniqueIdentifier>{6ae4e8e1-0c5f-44ae-8e84-1977c58058f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameWorld Files">
+      <UniqueIdentifier>{7a5ed42f-525a-4666-97b9-da2954ccf8b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player Files">
+      <UniqueIdentifier>{21af091f-58c7-4f95-8c4d-37ff1166245f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking Files">
+      <UniqueIdentifier>{2622dbc7-dc26-4046-9dcc-b16db9032955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\ControllerMessages">
+      <UniqueIdentifier>{84710eba-90c0-442e-99cf-5847f15babe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages">
+      <UniqueIdentifier>{c9a346c1-0147-4f26-b9a7-274775a09b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers">
+      <UniqueIdentifier>{2a28b411-2c42-45d3-8ebf-3cc655473ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes">
+      <UniqueIdentifier>{49821e9f-d488-4644-9577-2a43f2ad8397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Damageable">
+      <UniqueIdentifier>{2e5279b9-780c-41cd-8631-401b401fc5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Undamageable">
+      <UniqueIdentifier>{4ca4476c-9856-44e5-b27d-e00967c682e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Damageable\Moveable">
+      <UniqueIdentifier>{371e0235-5c2f-4e04-8ad5-b7854748d21b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Undamageable\Pickups">
+      <UniqueIdentifier>{ad3e2cf7-7651-4065-8017-df66a9915b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Undamageable\Props">
+      <UniqueIdentifier>{5533f7e9-ef7f-4c4c-aa58-96ec9d6809f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Undamageable\Pickups\Powerups">
+      <UniqueIdentifier>{9b35c1d4-5b47-47f5-b2b7-e8d06e12caba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HUD">
+      <UniqueIdentifier>{ab4076ff-07bf-4d0c-bce4-56b78f57fc08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Files">
+      <UniqueIdentifier>{33f114bc-c295-426c-aec4-50f5f6829415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Files\States">
+      <UniqueIdentifier>{7636b041-5cc6-4d4c-80d0-f1c98eae6471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action Files">
+      <UniqueIdentifier>{328ce48d-2154-48ad-ab20-c0245f6bde8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagers\EntityTypes\Damageable\NotMoveable">
+      <UniqueIdentifier>{626e76dd-f202-43cd-9eea-be0311f313c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages">
+      <UniqueIdentifier>{e2dae8b0-87d9-4a7b-9c04-d765ab891479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Sound">
+      <UniqueIdentifier>{51f41307-9dfc-4e4b-87df-900eb95306a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Entity Messages">
+      <UniqueIdentifier>{407a033d-76cf-42b9-9ba4-7387012ae443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Particle Messages">
+      <UniqueIdentifier>{d02aa7ac-e7f3-4c05-a24b-fdfdc1f0ba83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Attack &amp; Health Messages">
+      <UniqueIdentifier>{109bd63a-985f-4b94-8c74-31e0f11fd785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Armor">
+      <UniqueIdentifier>{437c4e1f-cc67-4a73-9676-adc4c143e4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Weapon">
+      <UniqueIdentifier>{4699efa6-5d90-4b7a-bb1b-a5c96b15239d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Add">
+      <UniqueIdentifier>{cc632a68-b314-4258-9749-a8ceda44db67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Change">
+      <UniqueIdentifier>{1a73da7c-85d6-4e30-9a2f-5fc1212e1f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Add">
+      <UniqueIdentifier>{fcdd4a17-6a32-499e-ad83-a793f6463e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Change">
+      <UniqueIdentifier>{c946a9c8-b339-4980-b427-c85f8f8c4168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Request Messages">
+      <UniqueIdentifier>{def92d12-c420-4523-b58b-e262467b5e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\ControllerMessages\Pickup">
+      <UniqueIdentifier>{1a0333d0-9dd5-4a89-9b6c-ad612a0dca99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\ControllerMessages\Player">
+      <UniqueIdentifier>{a270c925-f836-4f1e-8bbc-c80388599a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\ClientMessages">
+      <UniqueIdentifier>{6744a332-2640-40a3-9efd-61a826e31d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message Files\NetworkMessages\Projectile Messages">
+      <UniqueIdentifier>{753741bb-e673-4893-99df-95dafd29f2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers">
+      <UniqueIdentifier>{f9b479dc-ccf3-4342-827e-9583b8260098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers\Pickup">
+      <UniqueIdentifier>{46eb1cf1-ba03-4ee3-84e6-29733b19aea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers\Projectile">
+      <UniqueIdentifier>{5b177945-3f04-46e7-8144-6224aa7f1f8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>GameWorld Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWorld.h">
+      <Filter>GameWorld Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPlayerController.h">
+      <Filter>Player Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCamera.h">
+      <Filter>Player Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePlayer.h">
+      <Filter>Player Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPlayerManager.h">
+      <Filter>Networking Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMoveAction.h">
+      <Filter>Action Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMovementMessage.h">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientOrientationMessage.h">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMessages.h">
+      <Filter>Message Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAIController.h">
+      <Filter>AI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBaseState.h">
+      <Filter>AI Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIdleState.h">
+      <Filter>AI Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>EntityManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBase.h">
+      <Filter>EntityManagers\EntityTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityDamageable.h">
+      <Filter>EntityManagers\EntityTypes\Damageable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityMoveable.h">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPlayer.h">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityEnemies.h">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityNotMoveable.h">
+      <Filter>EntityManagers\EntityTypes\Damageable\NotMoveable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityUndamageable.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityProps.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Props</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPickups.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityArmor.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityWeapon.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPowerups.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFuel.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityHealth.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityScraps.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHud.h">
+      <Filter>HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAttackAction.h">
+      <Filter>Action Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPickUpMessage.h">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="Pathfinding.h">
+      <Filter>AI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityEquippable.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryWindow.h">
+      <Filter>HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPauseAction.h">
+      <Filter>Action Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyChaseState.h">
+      <Filter>AI Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAttackState.h">
+      <Filter>AI Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBullet.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeAIStateMessage.h">
+      <Filter>AI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityScenery.h">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundMessage.h">
+      <Filter>Message Files\NetworkMessages\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestMessage.h">
+      <Filter>Message Files\NetworkMessages\Request Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestRenameMessage.h">
+      <Filter>Message Files\NetworkMessages\Request Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityRemoverMessage.h">
+      <Filter>Message Files\NetworkMessages\Entity Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnMessage.h">
+      <Filter>Message Files\NetworkMessages\Entity Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackMessage.h">
+      <Filter>Message Files\NetworkMessages\Attack &amp; Health Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerHealthUpdateMessage.h">
+      <Filter>Message Files\NetworkMessages\Attack &amp; Health Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnParticleMessage.h">
+      <Filter>Message Files\NetworkMessages\Particle Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="AddArmorToInventoryMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Add</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeArmorMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Change</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeArmorMessageAll.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Change</Filter>
+    </ClInclude>
+    <ClInclude Include="AddWeaponToInventoryMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Add</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateWeaponMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Change</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateWeaponMessageAll.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Change</Filter>
+    </ClInclude>
+    <ClInclude Include="AddArmorAndWeaponToPlayersMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="PickUpObtainedMessage.h">
+      <Filter>Message Files\ControllerMessages\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerDestroyMessage.h">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInformationMessage.h">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMovementMessage.h">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerOrientationMessage.h">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStateMessage.h">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="DestroyProjectileMessage.h">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectileRequestMessage.h">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnProjectileMessage.h">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmorPickupController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="FuelPickUpController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPickUpController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="PickUpController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrapPickUpController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponPickupController.h">
+      <Filter>Controllers\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="MyProjectileController.h">
+      <Filter>Controllers\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="SparkParticleSystem.h">
+      <Filter>GameWorld Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBaseType.h">
+      <Filter>GameWorld Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveArmorAndWeaponsFromInventoryMessage.h">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="MySelfDestructAction.h">
+      <Filter>Action Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerKillRequestMessage.h" />
+    <ClInclude Include="PlayerChangeAnimationStateMessage.h">
+      <Filter>Message Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>GameWorld Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWorld.cpp">
+      <Filter>GameWorld Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlayer.cpp">
+      <Filter>Player Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCamera.cpp">
+      <Filter>Player Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPlayerController.cpp">
+      <Filter>Player Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPlayerManager.cpp">
+      <Filter>Networking Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMoveAction.cpp">
+      <Filter>Action Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientMovementMessage.cpp">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientOrientationMessage.cpp">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAIController.cpp">
+      <Filter>AI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyBaseState.cpp">
+      <Filter>AI Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="MyIdleState.cpp">
+      <Filter>AI Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>EntityManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityBase.cpp">
+      <Filter>EntityManagers\EntityTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityDamageable.cpp">
+      <Filter>EntityManagers\EntityTypes\Damageable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityMoveable.cpp">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPlayer.cpp">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityEnemies.cpp">
+      <Filter>EntityManagers\EntityTypes\Damageable\Moveable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityNotMoveable.cpp">
+      <Filter>EntityManagers\EntityTypes\Damageable\NotMoveable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityUndamageable.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityProps.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Props</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPickups.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityArmor.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityWeapon.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPowerups.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFuel.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityHealth.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityScraps.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHud.cpp">
+      <Filter>HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAttackAction.cpp">
+      <Filter>Action Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPickUpMessage.cpp">
+      <Filter>Message Files\ClientMessages</Filter>
+    </ClCompile>
+    <ClCompile Include="Pathfinding.cpp">
+      <Filter>AI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityEquippable.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryWindow.cpp">
+      <Filter>HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPauseAction.cpp">
+      <Filter>Action Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyChaseState.cpp">
+      <Filter>AI Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAttackState.cpp">
+      <Filter>AI Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityBullet.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeAIStateMessage.cpp">
+      <Filter>AI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityScenery.cpp">
+      <Filter>EntityManagers\EntityTypes\Undamageable</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Request Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestRenameMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Request Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityRemoverMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Entity Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Entity Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Attack &amp; Health Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerHealthUpdateMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Attack &amp; Health Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnParticleMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Particle Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="AddArmorToInventoryMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Add</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeArmorMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Change</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeArmorMessageAll.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Armor\Change</Filter>
+    </ClCompile>
+    <ClCompile Include="AddWeaponToInventoryMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Add</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateWeaponMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Change</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateWeaponMessageAll.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages\Weapon\Change</Filter>
+    </ClCompile>
+    <ClCompile Include="AddArmorAndWeaponToPlayersMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="PickUpObtainedMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerDestroyMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInformationMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMovementMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerOrientationMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStateMessage.cpp">
+      <Filter>Message Files\ControllerMessages\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyProjectileMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectileRequestMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnProjectileMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Projectile Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmorPickupController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="FuelPickUpController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthPickUpController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="PickUpController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrapPickUpController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponPickupController.cpp">
+      <Filter>Controllers\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="MyProjectileController.cpp">
+      <Filter>Controllers\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="SparkParticleSystem.cpp">
+      <Filter>GameWorld Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBaseType.cpp">
+      <Filter>GameWorld Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveArmorAndWeaponsFromInventoryMessage.cpp">
+      <Filter>Message Files\NetworkMessages\Armor and Weapon Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="MySelfDestructAction.cpp">
+      <Filter>Action Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerKillRequestMessage.cpp" />
+    <ClCompile Include="PlayerChangeAnimationStateMessage.cpp">
+      <Filter>Message Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

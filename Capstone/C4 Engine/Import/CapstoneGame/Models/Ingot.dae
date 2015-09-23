@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.69.0 r60995</authoring_tool>
+    </contributor>
+    <created>2015-03-02T17:39:42</created>
+    <modified>2015-03-02T17:39:42</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ingotDiffuse_png" name="ingotDiffuse_png">
+      <init_from>ingotDiffuse.png</init_from>
+    </image>
+    <image id="ingotSpec_png" name="ingotSpec_png">
+      <init_from>ingotSpec.tga</init_from>
+    </image>
+    <image id="ingotNormal_png" name="ingotNormal_png">
+      <init_from>ingotNormal.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="ingotMaterial-effect">
+      <profile_COMMON>
+        <newparam sid="ingotSpec_png-surface">
+          <surface type="2D">
+            <init_from>ingotSpec_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ingotSpec_png-sampler">
+          <sampler2D>
+            <source>ingotSpec_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ingotNormal_png-surface">
+          <surface type="2D">
+            <init_from>ingotNormal_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ingotNormal_png-sampler">
+          <sampler2D>
+            <source>ingotNormal_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ingotSpec_png-sampler" texcoord="ingotUV"/>
+            </diffuse>
+            <specular>
+              <texture texture="ingotSpec_png-sampler" texcoord="ingotUV"/>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <bump>
+                <texture texture="ingotNormal_png-sampler" texcoord="ingotUV"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ingotMaterial-material" name="ingotMaterial">
+      <instance_effect url="#ingotMaterial-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ingot-mesh" name="ingot">
+      <mesh>
+        <source id="ingot-mesh-positions">
+          <float_array id="ingot-mesh-positions-array" count="24">0.0393241 0.1328172 0.05002009 -0.03932416 0.1328173 0.05002009 -0.03932416 -0.1328174 0.05002009 0.0393241 -0.1328175 0.05002009 -0.04999995 -0.1499999 2.01203e-5 0.04999995 -0.1499999 2.01201e-5 0.04999995 0.1499999 2.01203e-5 -0.04999995 0.1499999 2.01203e-5</float_array>
+          <technique_common>
+            <accessor source="#ingot-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ingot-mesh-normals">
+          <float_array id="ingot-mesh-normals-array" count="24">0.5200659 0.4697714 0.7133091 -0.5200659 0.4697714 0.7133091 0.5200659 -0.4697714 0.7133091 -0.6160161 -0.6554155 -0.4369335 -0.5200659 -0.4697714 0.7133091 -0.6160161 0.6554155 -0.4369335 0.6160161 0.6554155 -0.4369335 0.6160161 -0.6554155 -0.4369335</float_array>
+          <technique_common>
+            <accessor source="#ingot-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ingot-mesh-map-0">
+          <float_array id="ingot-mesh-map-0-array" count="72">0.8296713 0.2190515 0.8296715 0.4142677 0.1703283 0.2190513 0.1276788 0.5411717 0.1703283 0.4142673 0.872321 0.5411724 0.8687859 0.9022013 0.1241439 0.9022013 0.868786 0.6539873 0.8296713 0.2190515 0.9609023 0.1925526 0.9609023 0.4407667 0.03909766 0.1925524 0.1703283 0.2190513 0.1703283 0.4142673 0.8723209 0.09214687 0.8296713 0.2190515 0.1703283 0.2190513 0.8296715 0.4142677 0.1703283 0.4142673 0.1703283 0.2190513 0.1703283 0.4142673 0.8296715 0.4142677 0.872321 0.5411724 0.1241439 0.9022013 0.1241439 0.6539873 0.868786 0.6539873 0.8296715 0.4142677 0.8296713 0.2190515 0.9609023 0.4407667 0.03909784 0.440766 0.03909766 0.1925524 0.1703283 0.4142673 0.1276791 0.09214669 0.8723209 0.09214687 0.1703283 0.2190513</float_array>
+          <technique_common>
+            <accessor source="#ingot-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ingot-mesh-map-1">
+          <float_array id="ingot-mesh-map-1-array" count="72">0.8296713 0.2190515 0.8296715 0.4142677 0.1703283 0.2190513 0.1276788 0.5411717 0.1703283 0.4142673 0.872321 0.5411724 0.8687859 0.9022013 0.1241439 0.9022013 0.868786 0.6539873 0.8296713 0.2190515 0.9609023 0.1925526 0.9609023 0.4407667 0.03909766 0.1925524 0.1703283 0.2190513 0.1703283 0.4142673 0.8723209 0.09214687 0.8296713 0.2190515 0.1703283 0.2190513 0.8296715 0.4142677 0.1703283 0.4142673 0.1703283 0.2190513 0.1703283 0.4142673 0.8296715 0.4142677 0.872321 0.5411724 0.1241439 0.9022013 0.1241439 0.6539873 0.868786 0.6539873 0.8296715 0.4142677 0.8296713 0.2190515 0.9609023 0.4407667 0.03909784 0.440766 0.03909766 0.1925524 0.1703283 0.4142673 0.1276791 0.09214669 0.8723209 0.09214687 0.1703283 0.2190513</float_array>
+          <technique_common>
+            <accessor source="#ingot-mesh-map-1-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ingot-mesh-vertices">
+          <input semantic="POSITION" source="#ingot-mesh-positions"/>
+        </vertices>
+        <polylist material="ingotMaterial-material" count="12">
+          <input semantic="VERTEX" source="#ingot-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ingot-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ingot-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ingot-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 3 2 2 4 3 3 2 4 4 7 5 5 6 6 6 5 7 7 7 5 8 0 0 9 6 6 10 7 5 11 5 7 12 3 2 13 2 4 14 6 6 15 0 0 16 3 2 17 1 1 18 2 4 19 3 2 20 2 4 21 1 1 22 7 5 23 5 7 24 4 3 25 7 5 26 1 1 27 0 0 28 7 5 29 4 3 30 5 7 31 2 4 32 5 7 33 6 6 34 3 2 35</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="ingot" name="ingot" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#ingot-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ingotMaterial-material" target="#ingotMaterial-material">
+                <bind_vertex_input semantic="ingotUV" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ingotUVLight" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
